@@ -249,7 +249,7 @@ components:
       layout_properties: {}
       event_bindings: {click: link_11_click}
     - name: link_12
-      properties: {text: Help, foreground: black, bold: true, icon: 'fa:support'}
+      properties: {text: Help, foreground: black, bold: true, icon: 'fa:question-circle'}
       type: Link
       layout_properties: {}
       event_bindings: {click: link_12_click}

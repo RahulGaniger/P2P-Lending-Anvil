@@ -1,7 +1,7 @@
 is_package: true
 container:
   type: HtmlTemplate
-  properties: {html: '@theme:standard-page.html'}
+  properties: {html: ''}
 components:
 - type: ColumnPanel
   properties: {col_widths: '{}'}
@@ -203,27 +203,27 @@ components:
       col_widths: {}
       grid_position: YGGCZE,VOBKGG
     name: label_1
-  - properties: {item_template: lendor.dashboard1.view_loan_extension_requests.ItemTemplate76,
+  - properties: {item_template: lendor.dashboard.view_loan_extension_requests.ItemTemplate76,
       visible: false}
     type: RepeatingPanel
     layout_properties: {grid_position: 'LYVCTU,BWGMAP'}
     name: repeating_panel_5
-  - properties: {item_template: lendor.dashboard1.view_loan_extension_requests.ItemTemplate77,
+  - properties: {item_template: lendor.dashboard.view_loan_extension_requests.ItemTemplate77,
       visible: false}
     type: RepeatingPanel
     layout_properties: {grid_position: 'BBHWPV,MORTEI'}
     name: repeating_panel_6
-  - properties: {item_template: lendor.dashboard1.view_loan_extension_requests.ItemTemplate78,
+  - properties: {item_template: lendor.dashboard.view_loan_extension_requests.ItemTemplate78,
       visible: false}
     type: RepeatingPanel
     layout_properties: {grid_position: 'ZJSKGD,GZYBAI'}
     name: repeating_panel_7
-  - properties: {item_template: lendor.dashboard1.view_loan_extension_requests.ItemTemplate79,
+  - properties: {item_template: lendor.dashboard.view_loan_extension_requests.ItemTemplate79,
       visible: false}
     type: RepeatingPanel
     layout_properties: {grid_position: 'MEGPIT,ULNMKC'}
     name: repeating_panel_8
-  - properties: {item_template: lendor.dashboard1.view_loan_extension_requests.ItemTemplate80,
+  - properties: {item_template: lendor.dashboard.view_loan_extension_requests.ItemTemplate80,
       visible: false}
     type: RepeatingPanel
     layout_properties: {grid_position: 'CIPULT,TVUFQT'}

@@ -1,7 +1,7 @@
 is_package: true
 container:
   type: HtmlTemplate
-  properties: {html: '@theme:standard-page.html'}
+  properties: {html: ''}
 components:
 - type: ColumnPanel
   properties: {col_widths: '{}', role: null}
@@ -25,7 +25,7 @@ components:
     type: Spacer
     layout_properties: {grid_position: 'IYZWUN,ZXSDFX', full_width_row: true}
   - name: repeating_panel_1
-    properties: {item_template: lendor.dashboard1.view_transaction_history.ItemTemplate65,
+    properties: {item_template: lendor.dashboard.view_transaction_history.ItemTemplate65,
       visible: false}
     type: RepeatingPanel
     layout_properties: {grid_position: 'KRQXGZ,ZFSBLY'}
@@ -61,7 +61,7 @@ components:
       type: Label
       layout_properties: {grid_position: 'TWRYIO,WQEHHG'}
   - name: repeating_panel_2
-    properties: {item_template: lendor.dashboard1.view_transaction_history.ItemTemplate100}
+    properties: {item_template: lendor.dashboard.view_transaction_history.ItemTemplate100}
     type: RepeatingPanel
     layout_properties: {grid_position: 'VDDQXG,KDJHWB'}
 - type: FlowPanel

@@ -1,5 +1,6 @@
 from ._anvil_designer import view_or_send_notificationsTemplate
 from anvil import *
+import plotly.graph_objects as go
 import anvil.server
 import anvil.google.auth, anvil.google.drive
 from anvil.google.drive import app_files
