@@ -48,7 +48,7 @@ class view_borrower_loan_request(view_borrower_loan_requestTemplate):
                     'borrower_customer_id': loan['borrower_customer_id'],
                     'lender_accepted_timestamp':loan['lender_accepted_timestamp'],
                     'loan_disbursed_timestamp':loan['loan_disbursed_timestamp'],
-                    'emi_payment_type':loan['emi_payment_type']
+            
                      # 'borrower_customer_id': loan['borrower_customer_id']
                     # Add other details you want to include
                                                   })          

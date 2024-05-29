@@ -46,7 +46,7 @@ class Form1(Form1Template):
     self.button_3_copy.text = f"Lost Opportunities ({len(lost_opportunities)})"
     self.button_4_copy.text = f"Closed ({len(closed)})"
     self.button_5_copy.text = f"Extended ({len(extended)})"
-    self.column_panel_8.width = '100%'
+    # self.column_panel_8.width = '100%'
 
     # Any code you write here will run before the form opens.
   def load_data(self,status):
