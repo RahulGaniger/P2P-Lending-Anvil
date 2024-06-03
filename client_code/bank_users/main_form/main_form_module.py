@@ -10,6 +10,7 @@ from anvil.tables import app_tables
 email = ""
 flag = ""
 userId = 0
+user_id=""
 
 def alert_mes(flag):
   return flag
