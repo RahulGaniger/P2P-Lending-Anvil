@@ -1,6 +1,6 @@
 container:
   type: ColumnPanel
-  properties: {col_widths: '{"XNVIUS":2,"IIAZST":13,"COJRWN":45,"BWFARX":5,"QCSJGW":20,"IEZLKL":15,"CBDBLB":25}'}
+  properties: {col_widths: '{"XNVIUS":2,"IIAZST":13,"COJRWN":45,"BWFARX":5,"QCSJGW":20,"IEZLKL":15,"CBDBLB":25,"UXBEHY":32}'}
 components:
 - name: image_1_copy_1_copy_1_copy_1_copy_1
   properties: {role: null, vertical_align: center, height: 42.33332824707031, tooltip: '',
@@ -91,7 +91,7 @@ components:
   type: Label
   layout_properties: {grid_position: 'VUSJAF,COJRWN TDZWTQ,UXBEHY AXHSRB,IEZLKL IHAISS,UACVFV'}
 - name: label_14
-  properties: {text: 'Annual salary :', bold: true}
+  properties: {text: 'Annual salary :', bold: true, visible: false}
   type: Label
   layout_properties: {grid_position: 'VUSJAF,COJRWN TDZWTQ,UXBEHY AXHSRB,IEZLKL WFLGMA,AWXPHZ'}
 - name: label_19
@@ -107,7 +107,7 @@ components:
   type: Label
   layout_properties: {grid_position: 'VUSJAF,COJRWN TDZWTQ,UXBEHY AXHSRB,CBDBLB NTDBQK,LSUXPH'}
 - name: label_22
-  properties: {}
+  properties: {visible: false}
   type: Label
   layout_properties: {grid_position: 'VUSJAF,COJRWN TDZWTQ,UXBEHY AXHSRB,CBDBLB QAAOTZ,PZSKFZ'}
 - name: column_panel_7_copy_copy

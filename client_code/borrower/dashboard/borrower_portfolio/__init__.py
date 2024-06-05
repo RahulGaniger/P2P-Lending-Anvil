@@ -35,10 +35,13 @@ class borrower_portfolio(borrower_portfolioTemplate):
     self.label_16.text = ascend['date_of_birth']
     self.label_17.text = ascend['gender']
     self.label_18.text = ascend['marital_status']
-    self.label_19.text = ascend['address_type']
+    self.label_19.text = ascend['present_address']
     self.label_20.text = ascend['qualification']
     self.label_21.text = ascend['profession']
-    self.label_22.text = ascend['annual_salary']
+    if ascend['profession'].lower() in ("employee", "self employment"):
+        self.label_22.visible = True
+        self.label_14.visible = True
+        self.label_22.text = ascend['annual_salary']
     
     
     # Check if the profile exists and the ascend value is valid

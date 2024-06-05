@@ -1,7 +1,7 @@
 is_package: true
 container:
   type: ColumnPanel
-  properties: {col_widths: '{"HJXPJG":67,"ASUGOE":2,"GKGMVX":2,"GZEPAB":58,"YXEJAJ":2,"BRNMJF":58,"JZUUWF":20,"RDWIZR":20,"AMTGYB":20,"ZMXVPS":2,"OHQTCG":58,"OYIVEL":2,"RYPZCD":58,"VURQFS":2,"KLQWYU":58,"NZODAV":2,"ATRLXT":58,"MJLLCS":2,"ETGUAR":58}',
+  properties: {col_widths: '{"HJXPJG":67,"ASUGOE":2,"GKGMVX":2,"GZEPAB":58,"YXEJAJ":2,"BRNMJF":58,"JZUUWF":20,"RDWIZR":20,"AMTGYB":20,"ZMXVPS":2,"OHQTCG":58,"OYIVEL":2,"RYPZCD":58,"VURQFS":2,"KLQWYU":58,"NZODAV":2,"ATRLXT":58,"MJLLCS":2,"ETGUAR":58,"HDJPHM":2,"IZXSVV":58}',
     spacing_below: none, background: ''}
 components:
 - properties: {align: justify}
@@ -70,58 +70,65 @@ components:
       layout_properties: {}
       event_bindings: {click: button_10_copy_click}
       name: button_10_copy
-- properties: {height: 442.25, background: '#2994bb'}
-  type: XYPanel
-  layout_properties: {grid_position: 'PMWTJR,PWFVJJ', full_width_row: true}
-  name: xy_panel_1
+- name: column_panel_7_copy_copy_2
+  properties: {role: null, col_widths: '{"EITWZQ":25}', background: '#2994bb'}
+  type: ColumnPanel
+  layout_properties: {grid_position: 'PCCMNG,FIMWRO', row_background: '', full_width_row: true}
   components:
-  - properties: {role: null, vertical_align: center, height: 431.46661376953125, tooltip: '',
-      border: '', foreground: '', visible: true, display_mode: fill_width, spacing_above: small,
-      source: _/theme/main.png, spacing_below: small, background: '', horizontal_align: center}
-    type: Image
-    layout_properties: {x: 146.75, y: -9.299999999999955, width: 457.15}
-    name: image_1_copy_1
-  - properties: {role: null, align: left, tooltip: '', border: '', foreground: white,
-      visible: true, text: Now invest with the largest Ascend's P2P Lending platform in India. Go with the most preferred non-market linked investment instrument that gives you risk adjusted returns.,
-      font_size: 25, font: '', spacing_above: small, icon_align: left, spacing_below: small,
-      italic: false, background: '', bold: false, underline: false, icon: ''}
-    type: Label
-    layout_properties: {x: 732.800048828125, y: 170.3499984741211, width: 616}
-    name: label_4_copy_1_copy
-  - properties: {role: null, align: left, tooltip: '', border: '', foreground: white,
-      visible: true, text: Earn up to 15% p.a.* with Ascend's P2P Lending, font_size: 35,
-      font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
-      background: '', bold: false, underline: false, icon: ''}
-    type: Label
-    layout_properties: {x: 733.8499877937138, y: 41.15000610426068, width: 555.7999877929688}
-    name: label_4_copy_1
-  - type: Label
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: white,
-      visible: true, text: No hidden fees. No fake promises., font_size: 20, font: '',
-      spacing_above: small, icon_align: left, spacing_below: small, italic: false,
-      background: '', bold: false, underline: false, icon: ''}
-    layout_properties: {x: 737.6375244148076, y: 397.6875, width: 318}
-    name: label_24
-  - type: Button
-    properties: {role: filled-button, align: center, tooltip: '', border: '', enabled: true,
-      foreground: white, visible: true, text: Start Investing, font_size: 16, font: '',
-      spacing_above: small, icon_align: left, spacing_below: small, italic: false,
-      background: '#05264d', bold: false, underline: false, icon: ''}
-    layout_properties: {x: 723.4375122077763, y: 333.9750099182129, width: 159}
-    event_bindings: {click: button_3_click}
-    name: button_3
-  - properties: {height: 404.25, source: _/theme/bank_users/main_form/main.png, display_mode: zoom_to_fill}
-    type: Image
-    layout_properties: {x: 149.23435974121094, y: 43.015625, width: 265}
-    name: image_2
-  - type: Image
-    properties: {height: 39, source: _/theme/bank_users/main_form/12-300x94.png}
-    layout_properties: {x: 298.140625, y: 280.296875, width: 181.891}
-    name: image_12
-  - type: Image
-    properties: {height: 46, source: _/theme/bank_users/main_form/rbi-registered-1.svg}
-    layout_properties: {x: 80.234375, y: 365.296875, width: 230.59375}
-    name: image_11
+  - properties: {height: 442.25, background: '#2994bb'}
+    type: XYPanel
+    layout_properties: {grid_position: 'WQBIEE,UBCCYG', full_width_row: true}
+    name: xy_panel_1
+    components:
+    - properties: {role: null, vertical_align: center, height: 431.46661376953125,
+        tooltip: '', border: '', foreground: '', visible: true, display_mode: fill_width,
+        spacing_above: small, source: _/theme/main.png, spacing_below: small, background: '',
+        horizontal_align: center}
+      type: Image
+      layout_properties: {x: 146.75, y: -9.299999999999955, width: 457.15}
+      name: image_1_copy_1
+    - properties: {role: null, align: left, tooltip: '', border: '', foreground: white,
+        visible: true, text: Now invest with the largest Ascend's P2P Lending platform in India. Go with the most preferred non-market linked investment instrument that gives you risk adjusted returns.,
+        font_size: 25, font: '', spacing_above: small, icon_align: left, spacing_below: small,
+        italic: false, background: '', bold: false, underline: false, icon: ''}
+      type: Label
+      layout_properties: {x: 732.800048828125, y: 170.3499984741211, width: 616}
+      name: label_4_copy_1_copy
+    - properties: {role: null, align: left, tooltip: '', border: '', foreground: white,
+        visible: true, text: Earn up to 15% p.a.* with Ascend's P2P Lending, font_size: 35,
+        font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+        background: '', bold: false, underline: false, icon: ''}
+      type: Label
+      layout_properties: {x: 733.8499877937138, y: 40.1500061042607, width: 700}
+      name: label_4_copy_1
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: white,
+        visible: true, text: No hidden fees. No fake promises., font_size: 20, font: '',
+        spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+        background: '', bold: false, underline: false, icon: ''}
+      layout_properties: {x: 737.6375244148076, y: 397.6875, width: 318}
+      name: label_24
+    - properties: {height: 451.25, source: _/theme/bank_users/main_form/main.png,
+        display_mode: zoom_to_fill}
+      type: Image
+      layout_properties: {x: 150.265625, y: 0, width: 265}
+      name: image_2
+    - type: Image
+      properties: {height: 46, source: _/theme/bank_users/main_form/rbi-registered-1.svg}
+      layout_properties: {x: 24.28124237060547, y: 361.34375, width: 230.59375}
+      name: image_11
+    - type: Image
+      properties: {height: 39, source: _/theme/bank_users/main_form/12-300x94.png}
+      layout_properties: {x: 307.21875, y: 289.3749694824219, width: 181.890625}
+      name: image_12
+    - type: Button
+      properties: {role: filled-button, align: center, tooltip: '', border: '', enabled: true,
+        foreground: white, visible: true, text: Start Investing, font_size: 16, font: '',
+        spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+        background: '#05264d', bold: false, underline: false, icon: ''}
+      layout_properties: {x: 723.484375, y: 350.0156555175781, width: 159}
+      event_bindings: {click: button_3_click}
+      name: button_3
 - properties: {height: 32}
   type: Spacer
   layout_properties: {grid_position: 'DRLNYG,CDSYSD'}
@@ -995,6 +1002,10 @@ components:
   properties: {height: '20'}
   layout_properties: {grid_position: 'BMHMDX,VXLTQN', full_width_row: true}
   name: spacer_5
+- name: spacer_40
+  properties: {height: 32}
+  type: Spacer
+  layout_properties: {grid_position: 'UVNZCH,HDJPHM', full_width_row: true}
 - properties: {text: '* RBI does not guarantee any returns or principal for the amount
       invested on the P2P platform.', font_size: 16}
   type: Label
