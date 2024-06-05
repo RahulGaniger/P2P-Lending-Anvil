@@ -20,6 +20,7 @@ class borrower_portfolio(borrower_portfolioTemplate):
     self.init_components(**properties)
     self.email = main_form_module.email
     self.user_Id = main_form_module.userId
+    self.create_bar_chart()
 
     # Set the label text with today's date
     today_date = datetime.datetime.now().strftime("%Y-%m-%d")
@@ -50,14 +51,28 @@ class borrower_portfolio(borrower_portfolioTemplate):
             self.ascend_score_label.text = str(ascend_value)
             
             # Update background color based on score range
-            if ascend_value > 65:
-                self.ascend_score_label.background = "#00FF00"  # Green
-            elif 50 <= ascend_value <= 65:
-                self.ascend_score_label.background = "#FFA500"  # Orange
-            elif 25 <= ascend_value < 50:
-                self.ascend_score_label.background = "#F08080"  # Light coral
-            else:
-                self.ascend_score_label.background = "#FF0000"  # Red
+            # Fetch all score ranges from the table
+            score_ranges = app_tables.fin_ascend_score_range.search()
+            
+            # Initialize default values
+            background_color = "#FFFFFF"  # Default to white
+            ascend_category = "Unknown"   # Default category
+            
+            # Iterate through the score ranges to find the correct background color and category
+            for score_range in score_ranges:
+                min_range = score_range['min_ascend_score_range']
+                max_range = score_range['max_ascend_score_range']
+                color = score_range['color'] 
+                category = score_range['ascend_category']  
+            
+                if min_range <= ascend_value <= max_range:
+                    background_color = color
+                    ascend_category = category
+                    break
+            
+            # Update the background color and display the category
+            self.ascend_score_label.background = background_color
+            self.ascend_score_label.text = ascend_category           
         else:
             print("Ascend value is not a number.")
     else:
@@ -131,10 +146,54 @@ class borrower_portfolio(borrower_portfolioTemplate):
     fig = go.Figure(data=[go.Pie(labels=labels, values=values, 
                                  textinfo='label+percent', insidetextorientation='radial', hole=.3)])
     
-    fig.update_layout(title_text='Loan Status Distribution')
+    fig.update_layout(title_text='Loans Distribution')
     
     # Bind the plotly figure to the Plot component
     self.plot_1.figure = fig
 
- 
+
+  def create_bar_chart(self):
+        # Fetch data from the table
+        score_ranges = app_tables.fin_ascend_score_range.search()
+
+        # Prepare data for the bar chart
+        categories = []
+        min_ranges = []
+        max_ranges = []
+
+        for score_range in score_ranges:
+            categories.append(score_range['ascend_category'])
+            min_ranges.append(score_range['min_ascend_score_range'])
+            max_ranges.append(score_range['max_ascend_score_range'])
+
+
+        # Create a trace for max_range
+        max_trace = go.Bar(
+            x=categories,
+            y=max_ranges,
+            name='Max Range',
+            marker=dict(color='#00FF00')  # Green for max range
+        )
+    
+        # Create a trace for min_range
+        min_trace = go.Bar(
+            x=categories,
+            y=min_ranges,
+            name='Min Range',
+            marker=dict(color='#FFA500')  # Orange for min range
+        )
+
+        # Create the figure with both traces
+        fig = go.Figure(data=[max_trace, min_trace])
+
+        # Set chart title and labels
+        fig.update_layout(
+            title='Ascend Score Ranges by Category',
+            xaxis_title='Ascend Category',
+            yaxis_title='Range Value',
+            barmode='group'  
+        )
+
+        # Display the chart in an Anvil component
+        self.plot_2.figure = fig
 

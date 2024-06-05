@@ -60,6 +60,23 @@ db_schema:
       admin_ui: {width: 200, order: 7}
       type: media
     title: fin_reported_problems
+  fin_ascend_score_range:
+    client: full
+    server: full
+    columns:
+    - name: min_ascend_score_range
+      admin_ui: {order: 0, width: 200}
+      type: number
+    - name: ascend_category
+      admin_ui: {order: 1, width: 200}
+      type: string
+    - name: max_ascend_score_range
+      admin_ui: {width: 200, order: -1}
+      type: number
+    - name: color
+      admin_ui: {width: 200, order: 2}
+      type: string
+    title: fin_ascend_score_range
   fin_gender:
     client: full
     server: full
