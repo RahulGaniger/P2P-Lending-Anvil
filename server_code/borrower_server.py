@@ -12,7 +12,13 @@ from datetime import datetime
 from . import wallet
 import anvil.pdf
 
-
+@anvil.server.callable()
+def create_pdf1(name, image_source, selected_row):
+    # A4 size in points (width, height) is (595, 842), for landscape swap to (842, 595)
+    # landscape_a4 = (842, 595)   
+    # Create the PDF in landscape mode by specifying the size
+    pdf = anvil.pdf.PDFRenderer(landscape=True).render_form("borrower.dashboard.borrower_portfolio", selected_row=selected_row)   
+    return pdf
 
 @anvil.server.callable
 def add_borrower_step1(qualification,user_id):

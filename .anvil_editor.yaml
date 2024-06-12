@@ -382,6 +382,7 @@ unique_ids:
     borrower.dashboard.borrower_portfolio_first_page: '1717671611958813432017046.4667'
     admin.dashboard.manage_ascend.add_subcategory.ItemTemplate90: '1710783183831809212349578.099'
     admin.dashboard.performance_tracker: '1701242878909114559440962.97266'
+    admin.dashboard.Accounting: '1718192321215653937323172.1517'
     admin.dashboard.reporting_and_analytical_modules.risk_pool.ItemTemplate105: '1717991579652406460291230.8766'
     bank_users.user_form: '1700630694974484249170019.45953'
     borrower.dashboard.view_loans.ItemTemplate38: 23VEN2YVTG2VLCCYCD5BX5DKKXOO643T
@@ -465,7 +466,6 @@ unique_ids:
     borrower_server: '169816543913997904134922.20096'
     lendo_server: '1699507662691410806325953.31323'
     mobile_server: '1706689030546954662276811.4379'
-    pdf_server: '1717739623398735940659120.8473'
     wallet_server: '1704193595074149997969994.77243'
   assets:
     admin/dashboard/product-management.png: 53W45PJ2DI45KGTAQLRNZB24S7TWHIAB
