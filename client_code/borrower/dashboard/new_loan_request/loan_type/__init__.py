@@ -224,6 +224,8 @@ class loan_type(loan_typeTemplate):
                 emi_denominator = ((1 + monthly_interest_rate) ** t) - 1
                 emi_numerator = p * monthly_interest_rate * ((1 + monthly_interest_rate) ** t)
                 Monthly_EMI = emi_numerator / emi_denominator
+                print('monthly emi' , Monthly_EMI)
+              
                 self.label_36.text = f"₹ {Monthly_EMI:.2f}"
                 interest_amount = Monthly_EMI * t - p
                 self.label_30.text = f"₹ {interest_amount:.2f}"

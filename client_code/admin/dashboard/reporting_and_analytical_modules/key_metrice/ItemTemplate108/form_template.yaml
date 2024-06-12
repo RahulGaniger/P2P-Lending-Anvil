@@ -1,0 +1,32 @@
+is_package: true
+container: {type: ColumnPanel}
+components:
+- name: label_1
+  properties: {align: center}
+  type: Label
+  layout_properties: {grid_position: 'XJTNVA,RIDFQH'}
+  data_bindings:
+  - {property: text, code: 'self.item[''customer_id'']', writeback: false}
+- name: label_2
+  properties: {align: center}
+  type: Label
+  layout_properties: {grid_position: 'XJTNVA,QLBRFE'}
+  data_bindings:
+  - {property: text, code: 'self.item[''user_name'']', writeback: false}
+- name: label_3
+  properties: {align: center}
+  type: Label
+  layout_properties: {grid_position: 'XJTNVA,TMBFPO'}
+  data_bindings:
+  - {property: text, code: 'self.item[''borrower_since'']', writeback: false}
+- name: label_4
+  properties: {align: center}
+  type: Label
+  layout_properties: {grid_position: 'XJTNVA,LCQCCS'}
+  data_bindings:
+  - {property: text, code: 'self.item[''ascend_score'']', writeback: false}
+- name: link_1
+  properties: {align: center, text: View Details}
+  type: Link
+  layout_properties: {grid_position: 'XJTNVA,BSIJCJ'}
+  event_bindings: {click: link_1_click}

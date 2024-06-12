@@ -1,0 +1,108 @@
+container: {type: ColumnPanel}
+components:
+- name: content_panel_copy_2
+  properties: {col_widths: '{}'}
+  type: ColumnPanel
+  layout_properties: {grid_position: 'JXBJII,JOMHCX', full_width_row: true}
+  components:
+  - name: content_panel_copy_copy
+    properties: {role: null, col_widths: '{}', spacing_above: small, background: '', wrap_on: mobile, col_spacing: medium, foreground: '', spacing_below: small, visible: true, border: '', tooltip: ''}
+    type: ColumnPanel
+    layout_properties:
+      col_widths: {}
+      grid_position: HHAEAE,AMFLWY
+      full_width_row: true
+    components:
+    - name: home_button_admin_1
+      properties: {}
+      type: form:admin.dashboard.home_button_admin
+      layout_properties: {grid_position: 'OQPYSO,PEVDGM', full_width_row: true}
+  - name: label_1
+    properties: {role: null, bold: true, align: center, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: 20, tooltip: '', text: Key Metrics Analysis}
+    type: Label
+    layout_properties: {grid_position: 'AJCEBX,TITXTM'}
+  - name: risk_plot
+    properties: {}
+    type: Plot
+    layout_properties: {grid_position: 'VUPCDZ,OOEQCM'}
+  - name: button_1_copy
+    properties: {text: Very Good, foreground: white, role: outlined-button, align: full, background: green, border: '', bold: true, font_size: 14}
+    type: Button
+    layout_properties: {grid_position: 'CGGLYK,GJEQDY'}
+    event_bindings: {click: very_click}
+  - name: button_2_copy
+    properties: {text: Good, foreground: white, role: outlined-button, background: orange, bold: true, align: full, font_size: 14}
+    type: Button
+    layout_properties: {grid_position: 'CGGLYK,FIAVZP'}
+    event_bindings: {click: good_click}
+  - name: button_5_copy
+    properties: {text: Average, foreground: white, align: full, role: outlined-button, background: '#F08080', bold: true, enabled: true, font_size: 14}
+    type: Button
+    layout_properties: {grid_position: 'CGGLYK,KKALWF'}
+    event_bindings: {click: average_clik}
+  - name: button_1_copy_copy
+    properties: {text: Bad, foreground: white, role: outlined-button, align: full, background: red, border: '', bold: true, font_size: 14}
+    type: Button
+    layout_properties: {grid_position: 'CGGLYK,JHMMGH'}
+    event_bindings: {click: bad_clidk}
+  - name: spacer_1
+    properties: {height: 11.999969482421875}
+    type: Spacer
+    layout_properties: {grid_position: 'CCVDME,UOQAIO'}
+  - name: label
+    properties: {align: center, visible: false, bold: true, font_size: 20}
+    type: Label
+    layout_properties: {grid_position: 'RTCBDA,BBKIEE'}
+  - name: column_panel_1
+    properties: {col_widths: '{"XKFLFB":45,"HUEKFC":15}', visible: false}
+    type: ColumnPanel
+    layout_properties: {grid_position: 'LGCAJR,TASNGO'}
+    components:
+    - name: text_box_search
+      properties: {placeholder: Enter text to Search, role: null, background: white}
+      type: TextBox
+      layout_properties: {grid_position: 'LZCBRJ,XKFLFB'}
+      event_bindings: {pressed_enter: text_box_search_change}
+    - name: button_1
+      properties: {text: Search, icon: 'fa:search', bold: true, font_size: 14, role: elevated-button, background: '#05264d', foreground: white}
+      type: Button
+      layout_properties: {grid_position: 'LZCBRJ,HUEKFC'}
+      event_bindings: {click: search_button_click}
+  - name: data_grid_2
+    properties:
+      columns:
+      - {id: JKSDUP, title: 'Borrwer Id ', data_key: column_1}
+      - {id: VJQQOR, title: Borrower Name, data_key: column_2, width: 190.142822265625, expand: false}
+      - {id: OJLQEN, title: Borrower Since, data_key: column_3}
+      - {id: DHMZYL, data_key: column_4, title: Ascend Score}
+      - {id: KXXMAN, data_key: column_1, title: ''}
+      visible: false
+      role: tonal-data-grid
+    type: DataGrid
+    layout_properties: {grid_position: 'BWAVOP,UTZZKJ'}
+    components:
+    - name: suggestions_panel
+      properties: {item_template: admin.dashboard.reporting_and_analytical_modules.key_metrice.ItemTemplate109}
+      type: RepeatingPanel
+  - name: data_grid_1
+    properties:
+      columns:
+      - {id: JKSDUP, title: 'Borrwer Id ', data_key: column_1, width: 154.9998779296875, expand: false}
+      - {id: VJQQOR, title: Borrower Name, data_key: column_2, width: 241.5714111328125, expand: false}
+      - {id: OJLQEN, title: Borrower Since, data_key: column_3, width: 220.5714111328125, expand: false}
+      - {id: RKPOSI, data_key: column_1, title: Ascend Score, width: 175.4283447265625, expand: false}
+      - {id: CHTHOV, data_key: column_1, title: ''}
+      role: tonal-data-grid
+      visible: false
+    type: DataGrid
+    layout_properties: {grid_position: 'MOUXZE,ZVTREL'}
+    components:
+    - name: repeating_panel_1
+      properties: {item_template: admin.dashboard.reporting_and_analytical_modules.key_metrice.ItemTemplate108}
+      type: RepeatingPanel
+  - name: back_button
+    properties: {role: outlined-button, bold: true, align: center, spacing_above: small, background: '#05264d', icon: 'fa:angle-double-left', underline: false, font: '', icon_align: left, foreground: white, spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: Back}
+    type: Button
+    layout_properties: {grid_position: 'JCCBWY,DFDMKE'}
+    event_bindings: {click: button_1_click}
+is_package: true

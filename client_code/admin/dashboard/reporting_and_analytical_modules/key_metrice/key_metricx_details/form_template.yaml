@@ -1,0 +1,85 @@
+container: {type: ColumnPanel}
+components:
+- name: home_button_admin_1
+  properties: {}
+  type: form:admin.dashboard.home_button_admin
+  layout_properties: {grid_position: 'CHKUGD,OXFQGG', full_width_row: true}
+- name: column_panel_1
+  properties: {col_widths: '{"MBWJOT":15,"LQZNUS":25,"RGKGXI":15,"DCDWDF":5}'}
+  type: ColumnPanel
+  layout_properties: {grid_position: 'OCMPAE,YBAGSF'}
+  components:
+  - name: label_35
+    properties: {role: outlined-card, bold: true, align: center, spacing_above: small, background: '#05264d', icon: '', underline: false, font: '', icon_align: left, foreground: 'theme:On Primary', spacing_below: small, visible: true, border: '', italic: false, font_size: 20, tooltip: '', text: View  Details}
+    type: Label
+    layout_properties: {grid_position: 'IKZOJE,ROJNUO'}
+  - name: spacer_1
+    properties: {height: 287.71417236328125}
+    type: Spacer
+    layout_properties: {grid_position: 'NESHTV,MBWJOT'}
+  - name: label_20
+    properties: {text: 'Borrower Customer Id :', bold: true}
+    type: Label
+    layout_properties: {grid_position: 'NESHTV,LQZNUS OUSBMA,DLAZHX'}
+  - name: label_5
+    properties: {role: null, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '#000337', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: 'Borrower Name :'}
+    type: Label
+    layout_properties: {grid_position: 'NESHTV,LQZNUS JWDFWH,DWVOAV'}
+  - name: label_27
+    properties: {role: null, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '#000337', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: 'Borrower Email :'}
+    type: Label
+    layout_properties: {grid_position: 'NESHTV,LQZNUS YIRFBJ,TJQPXY'}
+  - name: label_1
+    properties: {role: null, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '#000337', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: 'Mobile No :'}
+    type: Label
+    layout_properties: {grid_position: 'NESHTV,LQZNUS LFGBLW,BKUKJP'}
+  - name: label_29
+    properties: {role: null, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '#000337', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: 'Ascend Score :'}
+    type: Label
+    layout_properties: {grid_position: 'NESHTV,LQZNUS QOCMRW,JPJJEA'}
+  - name: label_17
+    properties: {role: null, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '#000337', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: 'Credit Limit :'}
+    type: Label
+    layout_properties: {grid_position: 'NESHTV,LQZNUS NNRGMP,LPMEGV'}
+  - name: label_19
+    properties: {role: null, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '#000337', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: 'Borrower Since :'}
+    type: Label
+    layout_properties: {grid_position: 'NESHTV,LQZNUS HMLXYG,LLMCOU'}
+  - name: customer_id
+    properties: {}
+    type: Label
+    layout_properties: {grid_position: 'NESHTV,RGKGXI QDBJZE,VJCEJQ'}
+  - name: name
+    properties: {}
+    type: Label
+    layout_properties: {grid_position: 'NESHTV,RGKGXI PRCTJN,QWDHOV'}
+  - name: email
+    properties: {}
+    type: Label
+    layout_properties: {grid_position: 'NESHTV,RGKGXI XMQNRG,ZEHJQU'}
+  - name: mobile
+    properties: {}
+    type: Label
+    layout_properties: {grid_position: 'NESHTV,RGKGXI IGYVSF,VVGHVR'}
+  - name: ascend
+    properties: {}
+    type: Label
+    layout_properties: {grid_position: 'NESHTV,RGKGXI JMYEGT,MUREYL'}
+  - name: credit
+    properties: {}
+    type: Label
+    layout_properties: {grid_position: 'NESHTV,RGKGXI LDGUTK,SHUTET'}
+  - name: since
+    properties: {}
+    type: Label
+    layout_properties: {grid_position: 'NESHTV,RGKGXI NNGXTW,CDPWVJ'}
+  - name: spacer_2
+    properties: {height: 263.142822265625}
+    type: Spacer
+    layout_properties: {grid_position: 'NESHTV,DCDWDF'}
+  - name: button_1
+    properties: {role: outlined-button, bold: true, align: center, spacing_above: small, background: '#05264d', icon: 'fa:angle-double-left', underline: false, font: '', icon_align: left, foreground: white, spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: Back}
+    type: Button
+    layout_properties: {grid_position: 'MBNYII,LZHZMS'}
+    event_bindings: {click: button_1_click}
+is_package: true

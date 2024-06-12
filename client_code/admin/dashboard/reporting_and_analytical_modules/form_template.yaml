@@ -25,7 +25,7 @@ components:
   layout_properties: {grid_position: 'KSJELA,RDSUBJ'}
   components:
   - name: image_1_copy
-    properties: {source: _/theme/Risk (2).png, height: '100'}
+    properties: {source: _/theme/growth.png, height: '100'}
     type: Image
     layout_properties: {grid_position: 'GNRRDW,FEOFAR'}
     event_bindings: {mouse_enter: image_1_mouse_enter, mouse_down: image_1_mouse_down, mouse_up: image_1_mouse_up}
@@ -34,4 +34,19 @@ components:
     type: Button
     layout_properties: {grid_position: 'LFNPCJ,OTMDIA'}
     event_bindings: {click: port_polio_risk_click}
+- name: content_panel_copy_2
+  properties: {col_widths: '{}', background: white, role: elevated-card}
+  type: ColumnPanel
+  layout_properties: {grid_position: 'KSJELA,WTPQQU'}
+  components:
+  - name: image_1_copy_2
+    properties: {source: _/theme/risk-management.png, height: '100'}
+    type: Image
+    layout_properties: {grid_position: 'GNRRDW,FEOFAR'}
+    event_bindings: {mouse_enter: image_1_mouse_enter, mouse_down: image_1_mouse_down, mouse_up: image_1_mouse_up}
+  - name: button_14_copy_2
+    properties: {text: Key Metrics, bold: true, foreground: black, font_size: 16}
+    type: Button
+    layout_properties: {grid_position: 'LFNPCJ,OTMDIA'}
+    event_bindings: {click: kay_metrics_click}
 is_package: true

@@ -144,7 +144,13 @@ class part_payment(part_paymentTemplate):
                   part_remaining_amount = float(self.loan_details['for_remaining_amount_calculation']) /2
 
                   additional_fees = self.calculate_additional_fees(emi_row)
-                    
+
+                  existing_fee_rows = app_tables.fin_platform_fees.get()
+                  if existing_fee_rows is None:
+                    app_tables.fin_platform_fees.add_row(platform_returns=additional_fees)
+                  else:
+                    existing_fee_rows['platform_returns'] +=additional_fees
+                    existing_fee_rows.update()
                   # schedule_payment  = emi_row['scheduled_payment']
                   # emi_payment_type = self.loan_details['emi_payment_type']
                   # if emi_payment_type in ['One Time', 'Monthly', 'Three Months', 'Six Months']:
@@ -209,7 +215,15 @@ class part_payment(part_paymentTemplate):
                       new_lender_balance = lender_balance + entered_amount
                       lender_wallet['wallet_amount'] = new_lender_balance
                       lender_wallet.update()
-  
+
+                      total_extra_fee = self.loan_details['total_extra_fee']
+                      existing_fee_rows = app_tables.fin_platform_fees.get()
+                      if existing_fee_rows is None:
+                        app_tables.fin_platform_fees.add_row(platform_returns=total_extra_fee)
+                      else:
+                        existing_fee_rows['platform_returns'] +=total_extra_fee
+                        existing_fee_rows.update()
+                        
                       # Update remaining amount in loan details table
                       remaining_amount = float(self.loan_details['remainining_amount']) - float(self.loan_details['for_remaining_amount_calculation']) /2
                       loan_id = self.loan_details['loan_id']

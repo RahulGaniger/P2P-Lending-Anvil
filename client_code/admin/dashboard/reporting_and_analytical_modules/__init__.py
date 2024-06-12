@@ -23,3 +23,7 @@ class reporting_and_analytical_modules(reporting_and_analytical_modulesTemplate)
   def port_polio_risk_click(self, **event_args):
     """This method is called when the button is clicked"""
     open_form('admin.dashboard.reporting_and_analytical_modules.port_folio_risk')
+
+  def kay_metrics_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    open_form('admin.dashboard.reporting_and_analytical_modules.key_metrice')

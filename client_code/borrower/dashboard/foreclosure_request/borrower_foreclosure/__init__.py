@@ -363,6 +363,14 @@ class borrower_foreclosure(borrower_foreclosureTemplate):
                             lender_data.update()
                     loan_row.update()
 
+
+                existing_fee_rows = app_tables.fin_platform_fees.get()
+                if existing_fee_rows is None:
+                  app_tables.fin_platform_fees.add_row(platform_returns=total_extra_fee)
+                else:
+                  existing_fee_rows['platform_returns'] +=total_extra_fee
+                  existing_fee_rows.update()
+              
                 app_tables.fin_emi_table.add_row(
                     loan_id=loan_id,
                     emi_number=self.total_payments_made + 1,  # Assuming the next EMI number

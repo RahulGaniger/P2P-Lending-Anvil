@@ -827,6 +827,7 @@ class check_out(check_outTemplate):
 
        # extra_amount = float(self.extension_amount_label.text)
         extra_fee = lapsed_fee + default_fee + extra_amount + npa
+        total_extra_fee = lapsed_fee + default_fee + extra_amount + processing_fee
       
         # total_emi_amount = float(self.total_emi_amount_label.text)  # Fetch total EMI amount including extra payment
         borrower_wallet = app_tables.fin_wallet.get(customer_id=self.user_id)
@@ -858,6 +859,13 @@ class check_out(check_outTemplate):
                     lender_wallet.update()
 
 
+                    existing_fee_rows = app_tables.fin_platform_fees.get()
+                    if existing_fee_rows is None:
+                      app_tables.fin_platform_fees.add_row(platform_returns=total_extra_fee)
+                    else:
+                      existing_fee_rows['platform_returns'] +=total_extra_fee
+                      existing_fee_rows.update()
+                  
                     if self.selected_row['remaining_amount'] is not None:
                         remaining_amount = self.selected_row['remaining_amount'] - emi_amount_for_remaining_amount#(emi_amount + processing_fee + extra_amount)
                     else:
@@ -1066,9 +1074,11 @@ class check_out(check_outTemplate):
           npa_fee = float(self.npa.text)
       except ValueError:
           npa_fee = 0.0
-      
+
+      processing_fee = float(self.processing_fee.text)
       # Calculate the extra fee
       extra_fee = lapsed_fee + default_fee + extension_amount + npa_fee
+      total_extra_fee = lapsed_fee + default_fee + extension_amount + processing_fee
       loan_details = {
         'i_r': self.i_r.text,
         'emi': self.emi.text,
@@ -1087,6 +1097,7 @@ class check_out(check_outTemplate):
         'emi_payment_type' : self.selected_row['emi_payment_type'],
         'current_emi_number' : int(self.selected_row['emi_number']),
         'extra_fee':extra_fee,
+        'total_extra_fee':total_extra_fee,
         'prev_scheduled_payment' : self.selected_row['scheduled_payment'],
         'prev_next_payment' : self.selected_row['next_payment'],
         'product_id' : self.selected_row['product_id'],

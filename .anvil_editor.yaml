@@ -10,6 +10,7 @@ unique_ids:
     borrower.dashboard.view_loans: ICYN55TRR23JMAO66TCTYTXNAAO3UHXJ
     borrower.dashboard.extension_loan_request.borrower_extension: G65BZ6LKKTGGTR6V6TOSLP3EEYZEQM2B
     lendor.dashboard.view_transaction_history.ItemTemplate65: '1710298383231796088123967.8053'
+    admin.dashboard.reporting_and_analytical_modules.key_metrice.key_metricx_details: '1718189786072469496446880.90173'
     ? borrower.borrower_registration_forms.star_1_borrower_registration_form_1_education.star_1_borrower_registration_form_education_10th_class
     : '1706674255415664927025189.0149'
     admin.dashboard.manage_loan_details.loan_management.approved_loans.view_profile: '1700740546893987573171578.3491'
@@ -244,6 +245,7 @@ unique_ids:
     lendor.dashboard.lender_view_loans.ItemTemplate52: '1709612227020162730100778.72473'
     admin.dashboard.manage_cms.add_lender_dropdown_details.ItemTemplate18: '1706531161313890698385999.5632'
     admin.dashboard.manage_loan_details.loan_management.open_loans.ItemTemplate35: '1709290914923653918005061.2881'
+    admin.dashboard.reporting_and_analytical_modules.key_metrice: '171818336735622964860510.2053'
     borrower.borrower_registration_forms.dashboard_contact_copy: '1715232460122915737549994.4711'
     admin.dashboard.manage_cms.add_lender_dropdown_details.ItemTemplate22: '1707911848966564215954614.5051'
     wallet.wallet.all_transaction.transaction_details: '171256881859895606245502.96715'
@@ -314,6 +316,7 @@ unique_ids:
     admin.dashboard.revenue_share.RowTemplate31: '17176618475036133093088.2324'
     lendor.dashboard.view_borrower_loan_request.Borr_loan_request: '1700542763128106365112272.9714'
     lendor.dashboard.view_transaction_history.ItemTemplate100: '1712308244698402395554355.8164'
+    admin.dashboard.reporting_and_analytical_modules.key_metrice.ItemTemplate109: '1718183485701894550867272.3522'
     lendor.dashboard.lender_view_loans.RowTemplate20: '1703139972848360547706878.1784'
     admin.dashboard.manage_products.manage_producs1: '1700713086879771707093045.5188'
     admin.dashboard.manage_cms: '1699528617179453409715572.5991'
@@ -367,6 +370,7 @@ unique_ids:
     admin.dashboard.lenders.ItemTemplate83: '1712062291870884018092572.6067'
     admin.dashboard.manage_ascend.add_subcategory.ItemTemplate92: '171108796269972522221607.73813'
     admin.dashboard.manage_cms.add_borrower_dropdown_details.ItemTemplate9: '1706093219174862056427246.7545'
+    admin.dashboard.reporting_and_analytical_modules.key_metrice.ItemTemplate108: '171818347145167199144409.647804'
     admin.dashboard.manage_products.view_product.RowTemplate5: '1700713251863745364072386.9193'
     admin.dashboard.manage_products.view_categories.editDetails: '1704371947758235068117859.1696'
     lendor.dashboard.view_loan_foreclosure_Requests: '169996304408474987603925.53683'
@@ -491,6 +495,7 @@ unique_ids:
     borrower/dashboard/borrower_balance.png: '1716289915365848937254710.7247'
     bank_users/main_form/business_loan/interest-rate-online.png: '1712300728341554097274802.1886'
     toggle-switch.html: '1701328671136540227032965.07666'
+    growth.png: '1718191087023435777932827.548'
     bank_users/main_form/business_loan/business-loan-1.jpg: '1712293634712557322745931.5127'
     admin/dashboard/manage_products/add-product (1).png: '1716453792237931461842928.577'
     bank_users/main_form/icons8-exchange-rupee-100 (1).png: '1712205769260984137365930.8503'
@@ -547,6 +552,7 @@ unique_ids:
     bank_users/personal_loan/marriage_loan/.gitkeep: '1715930060234710034747565.0317'
     bank_users/main_form/investnow-applyforloan/invest now.jpg: '1714367222182830070096820.575'
     bank_users/main_form/customer review 2.png: '1708336552923755824441573.2804'
+    risk-management.png: '1718191101319664692868574.8723'
     bank_users/main_form/.gitkeep: '1715930244250306915103367.4311'
     emi interest.png: '1712559954163931926473073.8877'
     admin/dashboard/.gitkeep: ZKVELNCIMFS2P3P62TUNFB4MU2A2YB5P
