@@ -34,7 +34,7 @@ components:
       layout_properties: {grid_position: 'GNRRDW,FEOFAR'}
       event_bindings: {mouse_enter: image_1_mouse_enter, mouse_down: image_1_mouse_down, mouse_up: image_1_mouse_up}
       name: image_1
-    - properties: {text: User Management, bold: true, foreground: black, font_size: 16}
+    - properties: {text: User Management Module, bold: true, foreground: black, font_size: 16}
       type: Button
       layout_properties: {grid_position: 'LFNPCJ,OTMDIA'}
       event_bindings: {click: button_14_click}
@@ -53,7 +53,11 @@ components:
       layout_properties: {grid_position: 'QGZTNW,PVJEPO'}
       event_bindings: {mouse_up: image_4_mouse_up}
       name: image_4
-    - properties: {text: Loan Management, bold: true, foreground: black, font_size: 16}
+    - properties:
+        text: "Loan Management \n"
+        bold: true
+        foreground: black
+        font_size: 16
       type: Button
       layout_properties: {grid_position: 'WBDDAG,QOALFI'}
       event_bindings: {click: button_15_click}
