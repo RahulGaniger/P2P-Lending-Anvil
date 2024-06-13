@@ -23,7 +23,7 @@ components:
     layout_properties: {grid_position: 'LKTWOF,LRMGVL', full_width_row: false}
     components:
     - name: image_4_copy
-      properties: {source: _/theme/admin/dashboard/loan-disbursement-tracking.png, display_mode: shrink_to_fit, height: '100', visible: true}
+      properties: {source: _/theme/admin/dashboard/accounting/loan-disbursement-tracking.png, display_mode: shrink_to_fit, height: '100', visible: true}
       type: Image
       layout_properties: {grid_position: 'QGZTNW,PVJEPO'}
       event_bindings: {mouse_up: image_4_copy_mouse_up}
@@ -45,7 +45,7 @@ components:
     layout_properties: {grid_position: 'LKTWOF,PPLSYB'}
     components:
     - name: image_4_copy_10
-      properties: {source: _/theme/admin/dashboard/interest-accurals.png, display_mode: shrink_to_fit, height: '100', visible: true}
+      properties: {source: _/theme/admin/dashboard/accounting/interest-accurals.png, display_mode: shrink_to_fit, height: '100', visible: true}
       type: Image
       layout_properties: {grid_position: 'QGZTNW,PVJEPO'}
       event_bindings: {mouse_up: image_4_copy_10_mouse_up}
@@ -65,7 +65,7 @@ components:
     layout_properties: {grid_position: 'LKTWOF,FPVXBC'}
     components:
     - name: image_4_copy_5
-      properties: {source: _/theme/admin/dashboard/payment-receipt.png, display_mode: shrink_to_fit, height: '100', visible: true}
+      properties: {source: _/theme/admin/dashboard/accounting/payment-receipt.png, display_mode: shrink_to_fit, height: '100', visible: true}
       type: Image
       layout_properties: {grid_position: 'QGZTNW,PVJEPO'}
       event_bindings: {mouse_up: image_4_copy_5_mouse_up}

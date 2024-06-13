@@ -106,7 +106,7 @@ components:
     layout_properties: {grid_position: 'AEVTNB,RAQZHX QPBDSN,BGNUNQ'}
     components:
     - name: image_13
-      properties: {height: '100', source: _/theme/admin/dashboard/accounting.png}
+      properties: {height: '100', source: _/theme/admin/dashboard/accounting/accounting.png}
       type: Image
       layout_properties: {grid_position: 'LCUQKR,NEICXT'}
     - name: button_1
