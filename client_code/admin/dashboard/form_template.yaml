@@ -34,7 +34,7 @@ components:
       layout_properties: {grid_position: 'GNRRDW,FEOFAR'}
       event_bindings: {mouse_enter: image_1_mouse_enter, mouse_down: image_1_mouse_down, mouse_up: image_1_mouse_up}
       name: image_1
-    - properties: {text: Manage Admins, bold: true, foreground: black, font_size: 16}
+    - properties: {text: User Management, bold: true, foreground: black, font_size: 16}
       type: Button
       layout_properties: {grid_position: 'LFNPCJ,OTMDIA'}
       event_bindings: {click: button_14_click}
