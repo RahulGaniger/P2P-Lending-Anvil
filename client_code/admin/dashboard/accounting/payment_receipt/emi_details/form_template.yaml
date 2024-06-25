@@ -39,7 +39,7 @@ components:
     type: RepeatingPanel
   layout_properties: {grid_position: 'NLCDGA,EZQHJI', full_width_row: true}
 - name: content
-  properties: {col_widths: '{"CFXWTY":35,"SQXOYR":25,"YLGQNC":40,"IKUYCT":20}', background: white, role: null, visible: true}
+  properties: {col_widths: '{"CFXWTY":35,"SQXOYR":25,"YLGQNC":40,"IKUYCT":20,"OFZDDK":55,"HHHOTL":5}', background: white, role: null, visible: true}
   type: ColumnPanel
   layout_properties: {grid_position: 'NTHLQJ,OAVHWD', full_width_row: true}
   components:
@@ -47,6 +47,10 @@ components:
     properties: {text: Loan Payment Receipt, align: center, bold: true, font_size: 30, background: '#ADC4CE', role: outlined-card}
     type: Label
     layout_properties: {grid_position: 'PYOZKS,OFZDDK', full_width_row: true}
+  - name: button_3
+    properties: {text: '', background: '#05264d', icon: 'fa:download', foreground: white}
+    type: Button
+    layout_properties: {grid_position: 'PYOZKS,HHHOTL'}
   - name: spacer_2
     properties: {height: 32}
     type: Spacer

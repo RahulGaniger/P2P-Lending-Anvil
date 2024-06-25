@@ -16,7 +16,7 @@ services:
 - source: /runtime/services/anvil/secrets.yml
   client_config: {}
   server_config: {}
-startup: {type: form, module: admin.dashboard.accounting.mis_reports}
+startup: {type: form, module: admin.dashboard}
 package_name: pip_install_reportlab
 allow_embedding: false
 name: P2P Lending App 1
