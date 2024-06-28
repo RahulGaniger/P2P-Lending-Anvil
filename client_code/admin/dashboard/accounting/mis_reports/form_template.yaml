@@ -212,27 +212,47 @@ components:
     layout_properties: {grid_position: 'KVOCTB,AOWGKV', full_width_row: true}
     name: content
     components:
-    - properties: {height: '700', spacing_above: medium, spacing_below: medium}
-      type: Plot
+    - name: column_panel_2
+      properties: {}
+      type: ColumnPanel
       layout_properties: {grid_position: 'GCAILA,MBFSBH', full_width_row: true}
-      name: plot_1
-    - properties: {height: '700', spacing_above: medium, spacing_below: medium}
-      type: Plot
+      components:
+      - properties: {height: '700', spacing_above: medium, spacing_below: medium}
+        type: Plot
+        layout_properties: {grid_position: 'KSPTUN,ETDJUX'}
+        name: plot_1
+    - name: column_panel_4
+      properties: {}
+      type: ColumnPanel
       layout_properties: {grid_position: 'GCAILA,RTYBEJ', full_width_row: true}
-      name: plot_2
+      components:
+      - properties: {height: '700', spacing_above: medium, spacing_below: medium}
+        type: Plot
+        layout_properties: {grid_position: 'CHKOAG,QRRIHT'}
+        name: plot_2
     - properties: {height: '70'}
       type: Spacer
       layout_properties: {grid_position: 'WWOLZH,QJMBNC'}
       name: spacer_4
-    - properties: {height: '700'}
-      type: Plot
+    - name: column_panel_5
+      properties: {}
+      type: ColumnPanel
       layout_properties: {grid_position: 'JJSYUV,ZLUTRG', full_width_row: true}
-      name: plot_3
-    - properties: {height: '700'}
-      type: Plot
+      components:
+      - properties: {height: '700'}
+        type: Plot
+        layout_properties: {grid_position: 'NJAVOI,LFUPKD'}
+        name: plot_3
+    - name: column_panel_6
+      properties: {}
+      type: ColumnPanel
       layout_properties: {grid_position: 'JJSYUV,EWEVJQ', full_width_row: true}
-      event_bindings: {click: plot_4_click}
-      name: plot_4
+      components:
+      - properties: {height: '700'}
+        type: Plot
+        layout_properties: {grid_position: 'MQMAEF,KTTMHV'}
+        event_bindings: {click: plot_4_click}
+        name: plot_4
     - properties: {height: '100'}
       type: Spacer
       layout_properties: {grid_position: 'BWVLBC,RDOEFN'}
