@@ -1,6 +1,6 @@
 container:
   type: ColumnPanel
-  properties: {col_widths: '{"ITCBYF":10,"ALTBGH":25,"UIAQLG":30,"PCHZDG":30,"ZGHNQO":25,"AEVSVW":25,"CTQQUB":11,"VIHTOP":20,"CNAXMB":40,"LLARTM":25,"XCETPN":27,"NQRPOW":30,"OMXXGK":30,"IJCBFD":20,"UWVSUV":40,"BFMXGH":30,"CIDAYR":25,"DULEQR":30,"LQMOMB":30,"FUSOJN":25,"IYHKUV":20,"GVCSUW":40,"OHHRNC":20,"FYCFNP":40,"VIRIRJ":20,"XWXVLL":40,"LUUNEQ":25,"LTGTNW":35,"ZDWSIY":25,"LKHQGR":35,"AQNXIE":25,"GDDLHY":53,"EUQSEO":30,"YMIFML":30,"DTEQWY":20,"XRMSHF":25,"GHBQRH":35,"JHIBGY":25,"FZFIPQ":25,"YZWYKW":35,"LBHHUP":15,"XBHCRO":20,"GKXWHX":25,"STNMEU":35,"QKJVIY":25,"YHTNZD":15,"KPOMER":20}'}
+  properties: {col_widths: '{"ITCBYF":10,"ALTBGH":25,"UIAQLG":30,"PCHZDG":30,"ZGHNQO":25,"AEVSVW":25,"CTQQUB":11,"VIHTOP":20,"CNAXMB":40,"LLARTM":25,"XCETPN":27,"NQRPOW":30,"OMXXGK":30,"IJCBFD":20,"UWVSUV":40,"BFMXGH":30,"CIDAYR":25,"DULEQR":30,"LQMOMB":30,"FUSOJN":25,"IYHKUV":20,"GVCSUW":40,"OHHRNC":20,"FYCFNP":40,"VIRIRJ":20,"XWXVLL":40,"LUUNEQ":25,"LTGTNW":35,"ZDWSIY":25,"LKHQGR":35,"GDDLHY":53,"EUQSEO":30,"YMIFML":30,"DTEQWY":20,"XRMSHF":25,"GHBQRH":35,"JHIBGY":25,"FZFIPQ":25,"YZWYKW":35,"LBHHUP":15,"XBHCRO":20,"GKXWHX":25,"STNMEU":35,"YHTNZD":15,"KPOMER":20}'}
 components:
 - name: spacer_2
   properties: {height: 10.399993896484375}
@@ -101,13 +101,9 @@ components:
   type: Spacer
   layout_properties: {grid_position: 'WFKZOV,ALTBGH LIQZOR,ZAWKNQ'}
 - name: label_06
-  properties: {role: input-prompt, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: 16, tooltip: '', text: Enter Your Government ID1}
+  properties: {role: input-prompt, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: right, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: 16, tooltip: '', text: Enter Your Government ID1  *}
   type: Label
   layout_properties: {grid_position: 'WFKZOV,ALTBGH QKXJCR,VSFNOL'}
-- name: label_11
-  properties: {foreground: red, text: '*'}
-  type: Label
-  layout_properties: {grid_position: 'WFKZOV,ALTBGH QKXJCR,WAQNYT'}
 - name: govt_id1_text_box
   properties: {role: outlined, bold: false, align: left, placeholder: 'Enter government id1 ex: adhar, driving licence, pan card etc..', spacing_above: small, background: 'theme:On Primary', type: text, underline: false, font: '', hide_text: false, foreground: '', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: ''}
   type: TextBox
@@ -224,7 +220,7 @@ components:
     icon: ''
     underline: false
     font: ''
-    icon_align: left
+    icon_align: right
     foreground: ''
     spacing_below: small
     visible: true
@@ -232,8 +228,7 @@ components:
     italic: false
     font_size: 16
     tooltip: ''
-    text: |
-      Upload Your Govt ID2
+    text: "Upload Your Govt ID2 \n"
   type: Label
   layout_properties: {grid_position: 'WFKZOV,XCETPN PQQRLU,GKXWHX'}
 - name: label_13

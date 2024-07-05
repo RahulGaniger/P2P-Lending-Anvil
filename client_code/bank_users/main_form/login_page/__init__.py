@@ -122,14 +122,14 @@ class login_page(login_pageTemplate):
                           open_form('borrower.borrower_registration_forms.star_1_borrower_registration_form_2_employment.star_1_borrower_registration_form_2_employment_farmer',user_id=userid)
                         elif user_type == 'borrower' and actual_count==3:
                           open_form('borrower.borrower_registration_forms.star_1_borrower_registration_form_3_marital',user_id=userid)
-                        elif user_type == 'borrower' and actual_count==3.1:
-                          open_form('borrower.borrower_registration_forms.star_1_borrower_registration_form_3_marital.star_1_borrower_registration_form_3_marital_married',user_id=userid, marital_status = marital_status)
+                        # elif user_type == 'borrower' and actual_count==3.1:
+                        #   open_form('borrower.borrower_registration_forms.star_1_borrower_registration_form_3_marital.star_1_borrower_registration_form_3_marital_married',user_id=userid, marital_status = marital_status)
                         elif user_type == 'borrower' and actual_count==4:
                           open_form('borrower.borrower_registration_forms.star_1_borrower_registration_form_4_loan',user_id=userid)
                         elif user_type == 'borrower' and actual_count==5:
                           open_form('borrower.borrower_registration_forms.star_1_borrower_registration_form_5_bank_1',user_id=userid)
-                        elif user_type == 'borrower' and actual_count==6:
-                          open_form('borrower.borrower_registration_forms.star_1_borrower_registration_form_5_bank_2',user_id=userid)
+                        # elif user_type == 'borrower' and actual_count==6:
+                        #   open_form('borrower.borrower_registration_forms.star_1_borrower_registration_form_5_bank_2',user_id=userid)
                         # For Lender Registration Form  
                         elif user_type == 'lender' and actual_count==1:
                           open_form('lendor.lendor_registration_forms.lender_registration_form_1_education_form',user_id=userid)
@@ -159,12 +159,12 @@ class login_page(login_pageTemplate):
                           open_form('lendor.lendor_registration_forms.lender_registration_form_2.lender_registration_individual_form_3',user_id=userid)
                         elif user_type == 'lender' and actual_count==3:
                           open_form('lendor.lendor_registration_forms.lender_registration_form_3_marital_details',user_id=userid)
-                        elif user_type == 'lender' and actual_count==3.1:
-                          open_form('lendor.lendor_registration_forms.lender_registration_form_3_marital_details.lender_registration_form_3_marital_married',user_id=userid,marital_status = marital_status)
+                        # elif user_type == 'lender' and actual_count==3.1:
+                        #   open_form('lendor.lendor_registration_forms.lender_registration_form_3_marital_details.lender_registration_form_3_marital_married',user_id=userid,marital_status = marital_status)
                         elif actual_count==4:
                           open_form('lendor.lendor_registration_forms.lender_registration_form_4_bank_form_1',user_id=userid)
-                        elif actual_count==5:
-                          open_form('lendor.lendor_registration_forms.lender_registration_form_4_bank_form_2',user_id=userid)
+                        # elif actual_count==5:
+                        #   open_form('lendor.lendor_registration_forms.lender_registration_form_4_bank_form_2',user_id=userid)
         
                         else:
                             open_form('bank_users.main_form.basic_registration_form')
