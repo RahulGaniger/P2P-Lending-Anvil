@@ -61,19 +61,19 @@ components:
       type: Spacer
       layout_properties: {grid_position: 'LOUJDS,QSUOUY'}
     - name: label_6
-      properties: {role: title, text: Welcome to Ascend's P2P, foreground: white, font_size: 40}
+      properties: {role: title, text: Welcome to Ascend's P2P, foreground: white, font_size: 36}
       type: Label
       layout_properties: {grid_position: 'LOUJDS,RTKSOW QUVAAZ,ZIPZDI', full_width_row: true}
     - name: label_9
-      properties: {text: 'Ascend''s P2P it is a Peer to Peer Lending platform. The company uses technology to match borrowers and lenders and in the process eliminates the margin which is charged by traditional banks and NBFCs, thus, making borrowing cheaper and investing a more lucrative opportunity as compared to traditional investment avenues.', background: '', foreground: white, font_size: 20, role: input-prompt}
+      properties: {text: 'Ascend''s P2P it is a Peer to Peer Lending platform. The company uses technology to match borrowers and lenders and in the process eliminates the margin which is charged by traditional banks and NBFCs, thus, making borrowing cheaper and investing a more lucrative opportunity as compared to traditional investment avenues.', background: '', foreground: white, font_size: 16, role: input-prompt}
       type: Label
       layout_properties: {grid_position: 'LOUJDS,RTKSOW SJSTRL,ROCLRP', full_width_row: true}
     - name: image_1
-      properties: {source: _/theme/bank_users/main_form/login_page/login-image.webp, display_mode: shrink_to_fit, height: 299.5999755859375}
+      properties: {source: _/theme/bank_users/main_form/login_page/login-image.webp, display_mode: shrink_to_fit, height: '280'}
       type: Image
       layout_properties: {grid_position: 'LOUJDS,RTKSOW IYLGEA,XVBVAK', full_width_row: true}
   - name: column_panel_1
-    properties: {background: '#094586', col_widths: '{"LLBEDS":45,"FZHHNU":5,"TSUFAE":10}'}
+    properties: {background: '#094586', col_widths: '{"LLBEDS":40,"FZHHNU":5,"TSUFAE":15}'}
     type: ColumnPanel
     layout_properties: {grid_position: 'AUEKVR,AGIDMN UVWPRW,XZEJHL', full_width_row: true}
     components:
@@ -82,41 +82,33 @@ components:
       type: Spacer
       layout_properties: {grid_position: 'WUAZDP,FZHHNU'}
     - name: column_panel_1_copy_copy
-      properties: {role: elevated-card, col_widths: '{"CQYWXR":10,"EKYSFD":54,"EOHAME":6,"VXLYLN":40,"IKUFXQ":10,"UXCVZV":40,"BHDWCQ":64,"MUTVVT":6}'}
+      properties: {role: elevated-card, col_widths: '{"EKYSFD":54,"EOHAME":6,"VXLYLN":40,"UXCVZV":40,"BHDWCQ":64,"MUTVVT":6}'}
       type: ColumnPanel
       layout_properties: {grid_position: 'WUAZDP,LLBEDS', full_width_row: true}
       components:
-      - name: spacer_13
-        properties: {height: 38.75}
-        type: Spacer
-        layout_properties: {grid_position: 'MPYCNK,IKUFXQ'}
       - name: label_7
-        properties: {role: title, text: Sign In, background: '', foreground: '#094586', bold: true, underline: false, italic: false, font_size: 40}
+        properties: {role: title, bold: true, align: center, spacing_above: none, background: '', underline: false, foreground: '#094586', spacing_below: none, italic: false, font_size: 40, text: Sign In}
         type: Label
         layout_properties: {grid_position: 'MPYCNK,UXCVZV'}
-      - name: spacer_6
-        properties: {height: 32}
-        type: Spacer
-        layout_properties: {grid_position: 'MPYCNK,CQYWXR'}
       - name: label_4
-        properties: {text: Email, bold: true}
+        properties: {text: Email, bold: true, font_size: 14, spacing_above: none, spacing_below: none}
         type: Label
         layout_properties: {grid_position: 'SSSREI,FEIKYR'}
       - name: text_box_1
-        properties: {role: outlined, background: white, placeholder: '', visible: true, foreground: '', bold: false}
+        properties: {role: outlined, bold: false, placeholder: '', spacing_above: none, background: white, foreground: '', spacing_below: none, visible: true, font_size: 14}
         type: TextBox
         layout_properties: {grid_position: 'XRBTUN,EKYSFD'}
         event_bindings: {pressed_enter: text_box_1_pressed_enter}
       - name: label_3
-        properties: {icon: 'fa:address-book', font_size: 20}
+        properties: {icon: 'fa:address-book', font_size: 16, icon_align: left, spacing_above: none, spacing_below: none}
         type: Label
         layout_properties: {grid_position: 'XRBTUN,EOHAME'}
       - name: label_5
-        properties: {text: Password, bold: true}
+        properties: {text: Password, bold: true, font_size: 14, spacing_above: none, spacing_below: none}
         type: Label
-        layout_properties: {grid_position: 'VLFKXH,ZGCZXK'}
+        layout_properties: {grid_position: 'BVLUEF,GCBHPS'}
       - name: text_box_2
-        properties: {placeholder: '', background: white, visible: true, enabled: true, role: outlined, hide_text: true}
+        properties: {role: outlined, placeholder: '', spacing_above: none, background: white, hide_text: true, spacing_below: none, visible: true, enabled: true, font_size: 14}
         type: TextBox
         layout_properties: {grid_position: 'WIGVMQ,BHDWCQ'}
         event_bindings: {pressed_enter: text_box_2_pressed_enter}
@@ -126,25 +118,25 @@ components:
         layout_properties: {grid_position: 'WIGVMQ,MUTVVT'}
         event_bindings: {mouse_up: eye_icon_1_click}
       - name: error_label
-        properties: {visible: false, foreground: red}
+        properties: {visible: false, foreground: red, font_size: 14, spacing_above: none, spacing_below: none}
         type: Label
         layout_properties: {grid_position: 'VPELKX,RRRHGT'}
       - name: send_otp
-        properties: {text: 'Forgot password?', foreground: blue, font_size: 8}
+        properties: {text: 'Forgot password?', foreground: blue, font_size: 14, spacing_above: small, spacing_below: none}
         type: Link
         layout_properties: {grid_position: 'UYYCFQ,QNIWOU'}
         event_bindings: {click: send_otp_click}
       - name: button_1
-        properties: {text: Sign In, background: '#094586', foreground: white, align: full, enabled: true, visible: true}
+        properties: {align: full, spacing_above: none, background: '#094586', foreground: white, spacing_below: none, visible: true, enabled: true, font_size: 14, text: Sign In}
         type: Button
         layout_properties: {grid_position: 'MPSRUO,XLAMBF', row_background: '', full_width_row: true}
         event_bindings: {click: button_1_click}
       - name: label_8
-        properties: {text: OR, align: center, bold: true, spacing_below: none, spacing_above: none}
+        properties: {text: OR, align: center, bold: true, spacing_below: none, spacing_above: none, font_size: 14}
         type: Label
         layout_properties: {grid_position: 'TTMYKF,BAXKBL'}
       - name: link_2
-        properties: {text: 'New user ?  Click here to SignUp', foreground: blue, font_size: null}
+        properties: {text: 'New user ?  Click here to SignUp', foreground: blue, font_size: 14, spacing_above: small, spacing_below: none}
         type: Link
         layout_properties: {grid_position: 'ETWHQH,VXLYLN'}
         event_bindings: {click: link_2_click}

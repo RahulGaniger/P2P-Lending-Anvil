@@ -1,3 +1,4 @@
+
 from ._anvil_designer import my_returnsTemplate
 from anvil import *
 import anvil.server
@@ -33,10 +34,15 @@ class my_returns(my_returnsTemplate):
         for index, investment in enumerate(investments):
             product = f"{investment['product_name']} ({index + 1})"
             products.append(product)
-            total_investments.append(investment['loan_amount'])
-            total_returns.append(investment['lender_returns'])
+            total_investments.append(investment['loan_amount'] if investment['loan_amount'] is not None else 0)
+            total_returns.append(investment['lender_returns'] if investment['lender_returns'] is not None else 0)
             tenures.append(investment['tenure'])
-            percentages.append((investment['lender_returns'] / investment['loan_amount']) * 100)
+            
+            # Calculate percentages only if both values are not None
+            if investment['lender_returns'] is not None and investment['loan_amount'] is not None:
+                percentages.append((investment['lender_returns'] / investment['loan_amount']) * 100)
+            else:
+                percentages.append(0)
 
         # Create bar chart traces
         investment_trace = go.Bar(x=products, y=total_investments, name='Investment', marker_color='blue')
@@ -53,7 +59,6 @@ class my_returns(my_returnsTemplate):
                 text=annotation_text,
                 showarrow=False,
                 font=dict(color='black', size=8, weight='bold')  # Set the color of the text to dark black and bold
-                # xanchor="right"
             ))
             # Position the percentage above the returns bar
             annotations.append(dict(
@@ -101,7 +106,9 @@ class my_returns(my_returnsTemplate):
           customer_id = investment['customer_id']
           if customer_id not in customer_returns:
               customer_returns[customer_id] = 0
-          customer_returns[customer_id] += investment['return_on_investment']
+          # Add only if return_on_investment is not None
+          if investment['return_on_investment'] is not None:
+              customer_returns[customer_id] += investment['return_on_investment']
       
       # Convert the dictionary to a list of tuples and sort by return_on_investment in descending order
       sorted_returns = sorted(customer_returns.items(), key=lambda x: x[1], reverse=True)

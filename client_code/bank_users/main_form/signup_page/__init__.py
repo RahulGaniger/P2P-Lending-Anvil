@@ -19,6 +19,7 @@ class signup_page(signup_pageTemplate):
     self.role = "no-scroll"
     self.user_type = user_type
     self.eye_icon_1.source = '_/theme/eye_closed.png'
+    self.eye_icon_2.source = '_/theme/eye_closed.png'
 
     # Any code you write here will run before the form opens.
   def eye_icon_1_click(self, **event_args):
@@ -29,6 +30,17 @@ class signup_page(signup_pageTemplate):
     else:
       self.text_box_2.hide_text = True  # Hide the password
       self.eye_icon_1.source = '_/theme/eye_closed.png'  # Change to closed eye icon
+
+  def eye_icon_2_click(self, **event_args):
+    """This method is called when the eye icon next to text_box_2 is clicked"""
+    if self.text_box_3.hide_text:
+      self.text_box_3.hide_text = False  # Show the password
+      self.eye_icon_2.source = '_/theme/eye_open.png'  # Change to open eye icon
+    else:
+      self.text_box_3.hide_text = True  # Hide the password
+      self.eye_icon_2.source = '_/theme/eye_closed.png'  # Change to closed eye icon
+
+
 
   
   def button_1_click(self, **event_args):
