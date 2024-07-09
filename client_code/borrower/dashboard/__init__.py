@@ -191,6 +191,7 @@ class dashboard(dashboardTemplate):
         self.update_user_profile()
         self.load_notifications()
         self.update_platform_fees()
+        self.image_1_copy_copy.role = 'circular-image'
          # Search for loans taken by the current user
         self.data= app_tables.fin_loan_details.search(borrower_customer_id=self.user_Id)
         loan_count = len(self.data)

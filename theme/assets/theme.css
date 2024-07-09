@@ -363,7 +363,7 @@ color: %color:On Primary Container%;
 }
 
 .left-nav .anvil-component-icon.left-icon {
-  width: 0;
+  width: 24px;
   margin-right: 56px;
   position: relative;
   top: 0.15em;
@@ -372,7 +372,7 @@ color: %color:On Primary Container%;
 .left-nav .anvil-component-icon.left_edge-icon, .left-nav .anvil-component-icon.right_edge-icon {
   left: 16px;
   padding-top: 2px;
-  width: 0;
+  width: 24px;
 }
 
 .left-nav .anvil-component-icon.right_edge-icon {
@@ -1166,8 +1166,9 @@ span.btn-text{
 }
 
 .anvil-role-circular-image img {
-  width: 200px; /* Adjust the size as needed */
-  height: 200px; /* Adjust the size as needed */
+  width: 150px; /* Adjust the size as needed */
+  height: 150px; /* Adjust the size as needed */
+  /* border: 0.5px solid black; */
   border-radius: 50%;
   object-fit: cover;
 }

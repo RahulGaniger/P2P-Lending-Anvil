@@ -21,6 +21,7 @@ class dashboard(dashboardTemplate):
     self.user_id = self.user_id
     self.load_data(None)
     self.update_platform_fees()
+    self.image_5.role = 'circular-image'
 
 
     user_profile = app_tables.fin_user_profile.get(customer_id=self.user_id)
@@ -41,7 +42,7 @@ class dashboard(dashboardTemplate):
 
     opening_bal = app_tables.fin_wallet.get(customer_id=self.user_id)   
     self.label_2_copy.text = "{:.2f}".format((opening_bal['wallet_amount'] or 0))
-    self.label_4_copy.text =  "{:.2f}".format((opening_bal['wallet_amount'] or 0))
+    # self.label_4_copy.text =  "{:.2f}".format((opening_bal['wallet_amount'] or 0))
 
     my_returns = app_tables.fin_lender.get(customer_id=self.user_id)
     self.label_7.text = str(my_returns['return_on_investment'] or 0)
