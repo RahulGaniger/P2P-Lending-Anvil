@@ -289,7 +289,7 @@ components:
     type: Label
     layout_properties: {grid_position: 'RXXTYP,SVZXLU'}
     name: label_1
-  - properties: {height: '100', display_mode: zoom_to_fill}
+  - properties: {height: '100', display_mode: zoom_to_fill, role: null}
     type: Image
     layout_properties: {grid_position: 'GWZFFP,GKXJDJ'}
     name: image_5

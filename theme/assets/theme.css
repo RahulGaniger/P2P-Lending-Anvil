@@ -478,8 +478,8 @@ color: %color:On Primary Container%;
   margin-bottom: 0;
 }
 
-.app-bar > .sidebar-toggle { display:block; float:left;  margin-left: -61px; }
-.app-bar > .top-left-btn { float: left; margin-left: -60px; margin-right: -40px; }
+/* .app-bar > .sidebar-toggle { display:block; float:left;  margin-left: -61px; } */
+/* .app-bar > .top-left-btn { float: left; margin-left: -60px; margin-right: -40px; } */
 .app-bar > .title { float: left; }
 .app-bar > .title > .placeholder { outline: 1px dotted; padding-left: 16px; padding-right: 16px; margin: 8px 8px 0; display:none; }
 .app-bar > .app-bar-nav { float: right; font-weight: normal; }
@@ -519,12 +519,12 @@ color: %color:On Primary Container%;
   color:#013065;
 }
 
-.app-bar .sidebar-toggle .fa-bars {
+/* .app-bar .sidebar-toggle .fa-bars {
   width: 30px;
   text-align: center;
   /* color:#013065; */
   /* visibility: visible; */
-}
+} */
 
 
 /* Don't put spacing on the top-level container (eg FlowPanel) */
@@ -1166,9 +1166,16 @@ span.btn-text{
 }
 
 .anvil-role-circular-image img {
-  width: 150px; /* Adjust the size as needed */
-  height: 150px; /* Adjust the size as needed */
+  width: 100px; /* Adjust the size as needed */
+  height: 100px; /* Adjust the size as needed */
   /* border: 0.5px solid black; */
   border-radius: 50%;
   object-fit: cover;
+}
+
+.anvil-image  .anvil-role-circular-image img{
+    width: 100px; /* Adjust the size as needed */
+    height: 100px; /* Adjust the size as needed */
+    border-radius: 50%;
+    object-fit: cover;
 }
