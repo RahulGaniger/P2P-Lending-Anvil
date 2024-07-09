@@ -14,6 +14,10 @@ components:
   properties: {prop: ''}
   name: navigation_bar_1
   layout_properties: {grid_position: 'GHCSJS,WGEGBD', full_width_row: true}
+- name: registration_process_1
+  properties: {}
+  type: form:borrower.borrower_registration_forms.registration_process
+  layout_properties: {grid_position: 'MAMRFW,HNUUXJ'}
 - name: column_panel_2
   properties: {role: outlined-card, col_widths: '{"DLVCWG":35,"CVLZJM":25,"BDLSWX":35,"CJYIIB":25,"LQRQMQ":35,"QODYWJ":25,"WFCYQG":35,"FHUDUV":25}'}
   type: ColumnPanel

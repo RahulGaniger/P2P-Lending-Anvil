@@ -232,6 +232,7 @@ unique_ids:
     admin.dashboard.customer_management.managing_customer_profile: 3TCU3AVPKHZWYGCDKC35SKCFF22O37TM
     admin.dashboard.integration.accounting_software: '1719604653520640871081728.8495'
     admin.dashboard.customer_management.kyc_verification: HLDVU2KEUPOI3RJXW3VKZPIQGBBBU5A4
+    borrower.dashboard.RowTemplate75: SLXRNOGRHLS3ENIFKWJB2YZWSL6DHW2G
     lendor.dashboard.RowTemplate9: '1715159663259330073006305.8728'
     lendor.dashboard.view_lost_oppurtunities.ItemTemplate53: '1709713876840119677681353.71126'
     admin.dashboard.accounting.mis_reports.eod_reports: '1719578585554829732701185.7445'
