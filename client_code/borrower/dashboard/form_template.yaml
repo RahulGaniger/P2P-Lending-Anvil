@@ -62,7 +62,7 @@ components:
     type: Label
     layout_properties: {grid_position: 'HQTFXG,HHCUBH', full_width_row: true}
     name: label_1
-  - properties: {height: '140', source: '', horizontal_align: center, role: null, display_mode: shrink_to_fit}
+  - properties: {height: '140', source: '', horizontal_align: center, role: null, display_mode: fill_width}
     type: Image
     layout_properties: {grid_position: 'BRLAXK,ICHEBR', full_width_row: true}
     event_bindings: {mouse_up: image_1_copy_copy_mouse_up}
