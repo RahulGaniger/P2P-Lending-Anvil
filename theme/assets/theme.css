@@ -436,7 +436,7 @@ color: %color:On Primary Container%;
 /* Components: App Bar */
 .app-bar {
   min-height: 65px;
-  padding: 0 16px 0 72px;
+  /* padding: 0 16px 0 10px; */
   position: fixed;
   width: 100%;
   
@@ -497,7 +497,8 @@ color: %color:On Primary Container%;
 }
 
 .app-bar .title .anvil-component {
-  margin-left: 0;
+  margin-left: 10px;
+  margin-top: 20px;
 }
 
 .app-bar input.anvil-component, .app-bar .anvil-component input {
@@ -1173,7 +1174,7 @@ span.btn-text{
   object-fit: cover;
 }
 
-.anvil-image  .anvil-role-circular-image img{
+.anvil-role-circular-image{
     width: 100px; /* Adjust the size as needed */
     height: 100px; /* Adjust the size as needed */
     border-radius: 50%;
