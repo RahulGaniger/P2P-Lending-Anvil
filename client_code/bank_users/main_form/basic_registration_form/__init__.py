@@ -41,8 +41,13 @@ class basic_registration_form(basic_registration_formTemplate):
             self.text_box_6.text = user_data['country']
             self.drop_down_1.selected_value = user_data['present_address']
             self.drop_down_2.selected_value = user_data['duration_at_address']
+            self.marital_status_borrower_registration_dropdown.selected_value=user_data['marital_status']
             user_data.update()
 
+        options = app_tables.fin_borrower_marrital_status.search()
+        options_string = [str(option['borrower_marrital_status']) for option in options]
+        self.marital_status_borrower_registration_dropdown.items = options_string
+    
         options = app_tables.fin_gender.search()
         option_strings = [str(option['gender']) for option in options]
         self.gender_dd.items = option_strings
@@ -64,8 +69,8 @@ class basic_registration_form(basic_registration_formTemplate):
         self.text_box_5.add_event_handler('change', self.validate_state)
         self.text_box_6.add_event_handler('change', self.validate_country)
         self.text_box_4.add_event_handler('change',self.validate_zip)
-        self.govt_id1_text_box.add_event_handler('change', self.toggle_upload_buttons)
-        self.govt_id2_text_box.add_event_handler('change', self.toggle_upload_buttons1)
+        # self.govt_id1_text_box.add_event_handler('change', self.toggle_upload_buttons)
+        # self.govt_id2_text_box.add_event_handler('change', self.toggle_upload_buttons1)
         # Add event handlers for file upload validation
         self.registration_img_file_loader.add_event_handler('change',self.validate_file_upload)
         self.registration_img_aadhar_file_loader.add_event_handler('change', self.validate_file_upload)
@@ -149,17 +154,17 @@ class basic_registration_form(basic_registration_formTemplate):
         else:
             self.text_box_6.background = '#FF0000 ' # Red background for invalid 
 
-    def toggle_upload_buttons(self, **event_args):
-        # Show the upload buttons if govt_id1_text_box is not empty
-        self.label_3_copy_1_copy_2.visible = bool(self.govt_id1_text_box.text)
-        self.registration_img_aadhar_file_loader.visible = bool(self.govt_id1_text_box.text)
-        self.image_aadhar.visible = bool(self.govt_id1_text_box.text)
+    # def toggle_upload_buttons(self, **event_args):
+    #     # Show the upload buttons if govt_id1_text_box is not empty
+    #     self.label_3_copy_1_copy_2.visible = bool(self.govt_id1_text_box.text)
+    #     self.registration_img_aadhar_file_loader.visible = bool(self.govt_id1_text_box.text)
+    #     self.image_aadhar.visible = bool(self.govt_id1_text_box.text)
         
-    def toggle_upload_buttons1(self, **event_args):
-        # Show the upload buttons if govt_id2_text_box is not empty
-        self.label_3_copy_1_copy_4.visible = bool(self.govt_id1_text_box.text)
-        self.registration_img_pan_file_loader.visible = bool(self.govt_id1_text_box.text)
-        self.image_pan.visible = bool(self.govt_id1_text_box.text)
+    # def toggle_upload_buttons1(self, **event_args):
+    #     # Show the upload buttons if govt_id2_text_box is not empty
+    #     self.label_3_copy_1_copy_4.visible = bool(self.govt_id1_text_box.text)
+    #     self.registration_img_pan_file_loader.visible = bool(self.govt_id1_text_box.text)
+    #     self.image_pan.visible = bool(self.govt_id1_text_box.text)
         
     def submit_btn_click(self, **event_args):
         """This method is called when the button is clicked"""
@@ -181,6 +186,7 @@ class basic_registration_form(basic_registration_formTemplate):
         country = self.text_box_6.text
         present = self.drop_down_1.selected_value
         duration = self.drop_down_2.selected_value
+        marital_status = self.marital_status_borrower_registration_dropdown.selected_value
     
         user_id = self.user_id
     
@@ -278,6 +284,10 @@ class basic_registration_form(basic_registration_formTemplate):
             self.drop_down_2.focus()
             Notification('Please fill all details').show()
             return
+        if not marital_status:
+            self.marital_status_borrower_registration_dropdown.background = '#FF0000'
+            self.marital_status_borrower_registration_dropdown.focus()
+            return()
     
         # Validate country
         if not re.match(r'^[A-Za-z]+$', country):
@@ -341,7 +351,7 @@ class basic_registration_form(basic_registration_formTemplate):
         # Call server function to add basic details
         anvil.server.call('add_basic_details', full_name, gender, dob, mobile_no, user_photo, alternate_email,
                         aadhar, aadhar_card, pan, pan_card, street_adress_1, street_address_2, city, pincode,
-                        state, country, user_id, user_age, present, duration)
+                        state, country, user_id, user_age, present, duration, marital_status)
         
     
         # Navigate to the appropriate form based on user type

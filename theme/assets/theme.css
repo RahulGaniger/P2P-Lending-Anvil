@@ -131,7 +131,7 @@ a>.anvil-component-icon.right_edge-icon,
 /* Typography */
 body {
   font-family: Roboto, Noto, Arial, sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.4286;
   color: %color:On Surface%;
   background-color: %color:Background%;
@@ -364,7 +364,7 @@ color: %color:On Primary Container%;
 
 .left-nav .anvil-component-icon.left-icon {
   width: 24px;
-  margin-right: 56px;
+  margin-right: 10px;
   position: relative;
   top: 0.15em;
 }
