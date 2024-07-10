@@ -358,6 +358,7 @@ unique_ids:
     admin.dashboard.reporting_and_analytical_modules.port_folio_risk: '1718086543092711058855646.7336'
     borrower.dashboard.today_dues.payment_details_t: Z2HBMIARMVXDAUCI63IT56ARRGJKDSV2
     admin.dashboard.loan_management.view_loans.default_loans.ItemTemplate32: '170929046923161926767111.04639'
+    lendor.dashboard.dashboard_notification.ItemTemplate116: '1719920863493231512089198.02048'
     bank_users.main_form.products_main_form.personal_loan.home_renovation_loan: '1713938826548976634706020.7678'
     admin.dashboard.manage_ascend_score.view_ascend_subcategory.RowTemplate19: '1709635189882215361568053.49905'
     admin.dashboard.customer_management.handles_customer_registration.borrowers.ItemTemplate96: '1712062136716241415691586.34946'
@@ -471,6 +472,7 @@ unique_ids:
     admin.dashboard.accounting.mis_reports.behavioural_report.foreclosure: '1719312907442862771161906.7465'
     admin.dashboard.integration.API_and_webhook: '1719604712348100997119318.08163'
     borrower.dashboard.view_loans.ItemTemplate45: 4JRZRQ7FWWIMPHC7XGTMTEDIFOQNNZ3G
+    lendor.dashboard.dashboard_notification: '1719919343698902522195731.2386'
     admin.dashboard.accounting.revenue_share.lender_revenue_share.RowTemplate32: HLTYFTXF5M24LJXDNV4YPMQCUADGDMPP
     borrower.dashboard.borrower_portfolio_first_page: '1717671611958813432017046.4667'
     admin.dashboard.customer_management.handles_customer_registration.borrowers.RowTemplate3: '1700662180254721391598758.9972'

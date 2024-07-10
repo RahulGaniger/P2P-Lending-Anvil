@@ -1684,9 +1684,6 @@ db_schema:
     - name: loan_id
       admin_ui: {width: 200}
       type: string
-    - name: penalty_amount
-      admin_ui: {width: 200}
-      type: number
     - name: outstanding_amount
       admin_ui: {width: 200}
       type: number

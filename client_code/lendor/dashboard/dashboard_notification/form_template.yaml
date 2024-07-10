@@ -1,0 +1,16 @@
+container: {type: ColumnPanel}
+components:
+- name: label_1
+  properties: {text: Notification, align: center, bold: true, role: title}
+  type: Label
+  layout_properties: {grid_position: 'XOAIEF,FGSIDC'}
+- name: repeating_panel_1
+  properties: {item_template: lendor.dashboard.dashboard_notification.ItemTemplate116}
+  type: RepeatingPanel
+  layout_properties: {grid_position: 'WBKBPS,CJVIFV'}
+- name: button_1
+  properties: {text: Back, foreground: white, role: filled-button, border: '', background: '#05264d', bold: true}
+  type: Button
+  layout_properties: {grid_position: 'UGXDJO,ODGZFV', full_width_row: true}
+  event_bindings: {click: button_1_click}
+is_package: true

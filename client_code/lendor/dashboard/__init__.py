@@ -247,4 +247,8 @@ class dashboard(dashboardTemplate):
     """This method is called when the link is clicked"""
     open_form('borrower.dashboard.borrower_portfolio_first_page')
 
+  def link_17_click(self, **event_args):
+    """This method is called when the link is clicked"""
+    open_form('lendor.dashboard.dashboard_notification')
+
 

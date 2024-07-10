@@ -22,90 +22,255 @@ components:
   properties: {}
   name: navigation_bar_main_lender_1
   layout_properties: {grid_position: 'EXCZML,VSXRMI', full_width_row: true}
-- name: label_1_copy_1
-  properties: {role: null, bold: true, align: center, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: Institutional Type}
-  type: Label
-  layout_properties: {grid_position: ''}
-- name: label_1_copy_1_copy
-  properties: {role: null, bold: true, align: center, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: 16, tooltip: '', text: Business Details}
-  type: Label
-  layout_properties: {grid_position: 'WRBAFI,YGPUEO'}
+- name: column_panel_1
+  properties: {role: outlined-card, background: '', foreground: white}
+  type: ColumnPanel
+  layout_properties: {grid_position: 'VOLHGX,ULFWPP'}
+  components:
+  - name: label_1_copy_1
+    properties: {role: null, bold: true, align: center, spacing_above: small, background: '#05264d', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: 18, tooltip: '', text: Institutional Type}
+    type: Label
+    layout_properties: {grid_position: 'GZIKEJ,LUTJGG'}
 - name: spacer_1
   properties: {height: 10.857086181640625}
   type: Spacer
   layout_properties: {grid_position: 'FWDRTA,HBBODP'}
-- name: label_2_copy_1
-  properties: {role: null, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: Enter Business Name}
-  type: Label
-  layout_properties: {grid_position: 'IXTWNR,XHYGIL'}
-- name: text_box_1
-  properties: {role: null, bold: false, align: left, placeholder: '', spacing_above: small, background: 'theme:On Primary', type: text, underline: false, font: '', hide_text: false, foreground: '', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: ''}
-  type: TextBox
-  layout_properties: {grid_position: 'IXTWNR,ZBDPWB'}
-- name: label_1_copy
-  properties: {role: null, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: Enter Business Address}
-  type: Label
-  layout_properties: {grid_position: 'NPWCHV,UVBLHO'}
-- name: text_box_2
-  properties: {role: null, bold: false, align: left, placeholder: '', spacing_above: small, background: 'theme:On Primary', type: text, underline: false, font: '', hide_text: false, foreground: '', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: ''}
-  type: TextBox
-  layout_properties: {grid_position: 'NPWCHV,TYZNXG'}
-- name: label_3_copy_1
-  properties: {role: null, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: Select Business Type}
-  type: Label
-  layout_properties: {grid_position: 'EEFOZT,VYPRYQ'}
-- name: drop_down_1
-  properties:
-    role: null
-    include_placeholder: true
-    bold: false
-    align: full
-    placeholder: Select one
-    spacing_above: small
-    background: theme:On Primary
-    underline: false
-    font: ''
-    foreground: ''
-    items: [Private, Government]
-    spacing_below: small
-    visible: true
-    border: ''
-    italic: false
-    enabled: true
-    font_size: null
-    tooltip: ''
-  type: DropDown
-  layout_properties: {grid_position: 'EEFOZT,VSTVRN'}
-- name: label_1
-  properties: {role: null, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: Select No of Employees Working}
-  type: Label
-  layout_properties: {grid_position: 'OMUYBH,OACGYJ'}
-- name: drop_down_2
-  properties:
-    role: null
-    include_placeholder: true
-    bold: false
-    align: full
-    placeholder: Select one
-    spacing_above: small
-    background: theme:On Primary
-    underline: false
-    font: ''
-    foreground: ''
-    items: [1-10, 11-15, 16-25, 26-40, 41-60, 61-75, 76-100, 100 above]
-    spacing_below: small
-    visible: true
-    border: ''
-    italic: false
-    enabled: true
-    font_size: null
-    tooltip: ''
-  type: DropDown
-  layout_properties: {grid_position: 'OMUYBH,CNFOWZ'}
-- name: spacer_2
-  properties: {height: 14.71417236328125}
-  type: Spacer
-  layout_properties: {grid_position: 'QMUKCR,OIRCQP'}
+- name: column_panel_2
+  properties: {}
+  type: ColumnPanel
+  layout_properties: {grid_position: 'JHYHPJ,UYLPGP'}
+  components:
+  - name: column_panel_3
+    properties: {foreground: black}
+    type: ColumnPanel
+    layout_properties: {grid_position: 'XUJQYA,IMNBOY'}
+    components:
+    - name: label_1_copy_1_copy
+      properties: {role: null, bold: true, align: center, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: 16, tooltip: '', text: Business Details}
+      type: Label
+      layout_properties: {grid_position: 'MPIBUJ,OOQZAS'}
+  - name: label_2
+    properties: {text: Enter Your Business Name  *, bold: true, spacing_above: medium, font_size: 14}
+    type: Label
+    layout_properties: {grid_position: 'STNSQX,IEPFUI'}
+  - name: label_1_copy_2
+    properties: {role: null, bold: true, align: left, spacing_above: medium, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: 12, tooltip: '', text: 'Enter Your Business  * Address:'}
+    type: Label
+    layout_properties: {grid_position: 'STNSQX,JBDHLY'}
+  - name: text_box_2_copy
+    properties: {role: outlined, background: 'theme:On Primary', placeholder: Enter Your Business Name, visible: true, font_size: 14}
+    type: TextBox
+    layout_properties: {grid_position: 'JZDMBC,YBVRCJ'}
+  - name: text_box_1_copy
+    properties: {role: outlined, bold: false, align: left, placeholder: Enter Your Business Address, spacing_above: small, background: 'theme:On Primary', type: text, underline: false, font: '', hide_text: false, foreground: '', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: 12, tooltip: '', text: ''}
+    type: TextBox
+    layout_properties: {grid_position: 'JZDMBC,UFWBCX'}
+  - name: grid_panel_4
+    properties: {}
+    type: GridPanel
+    layout_properties: {grid_position: 'QXOKLC,RZSCFT'}
+    components:
+    - name: label_3_copy_1_copy
+      properties: {role: null, bold: true, align: left, spacing_above: medium, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: medium, visible: true, border: '', italic: false, font_size: 12, tooltip: '', text: 'Select Your Business Type:  *'}
+      type: Label
+      layout_properties: {row: SALHYU, width_xs: 4, col_xs: 2}
+    - name: drop_down_12
+      properties:
+        role: outlined
+        include_placeholder: true
+        bold: false
+        align: full
+        placeholder: Select One
+        spacing_above: small
+        background: theme:On Primary
+        underline: false
+        font: ''
+        foreground: ''
+        items: [Private, Government]
+        spacing_below: small
+        visible: true
+        border: ''
+        italic: false
+        enabled: true
+        font_size: 12
+        tooltip: ''
+      type: DropDown
+      layout_properties: {row: SALHYU, width_xs: 6, col_xs: 6}
+    - name: label_1_copy_copy
+      properties: {role: null, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: medium, visible: true, border: '', italic: false, font_size: 12, tooltip: '', text: 'Select No of Employees  * Working:'}
+      type: Label
+      layout_properties: {row: LTEVKU, width_xs: 3, col_xs: 2}
+    - name: drop_down_4
+      properties:
+        role: outlined
+        include_placeholder: true
+        bold: false
+        align: full
+        placeholder: Select One
+        spacing_above: small
+        background: theme:On Primary
+        underline: false
+        font: ''
+        foreground: ''
+        items: [1-10, 11-15, 16-25, 26-40, 41-60, 61-75, 76-100, 100 above]
+        spacing_below: small
+        visible: true
+        border: ''
+        italic: false
+        enabled: true
+        font_size: 12
+        tooltip: ''
+      type: DropDown
+      layout_properties: {row: LTEVKU, width_xs: 6, col_xs: 6}
+    - name: label_2_copy
+      properties: {role: null, bold: true, align: left, spacing_above: medium, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: medium, visible: true, border: '', italic: false, font_size: 12, tooltip: '', text: 'Select Year of Establishment:  *'}
+      type: Label
+      layout_properties: {row: KMCUWH, width_xs: 3, col_xs: 2}
+    - name: date_picker_1
+      properties: {role: outlined, bold: false, format: '', align: left, date: '', placeholder: Select Date, pick_time: false, spacing_above: small, background: 'theme:On Primary', underline: false, font: '', max_date: '', foreground: '', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: 12, tooltip: '', min_date: ''}
+      type: DatePicker
+      layout_properties: {row: KMCUWH, width_xs: 6, col_xs: 6}
+    - name: label_2_copy_1_copy_1
+      properties: {role: null, bold: true, align: left, spacing_above: medium, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: medium, visible: true, border: '', italic: false, font_size: 12, tooltip: '', text: 'Enter Your Industry Type:  *'}
+      type: Label
+      layout_properties: {row: CIBTIC, width_xs: 3, col_xs: 2}
+    - name: text_box_3
+      properties: {role: outlined, bold: false, align: left, placeholder: Enter Your Industry Type, spacing_above: small, background: 'theme:On Primary', type: text, underline: false, font: '', hide_text: false, foreground: '', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: 12, tooltip: '', text: ''}
+      type: TextBox
+      layout_properties: {row: CIBTIC, width_xs: 6, col_xs: 6}
+    - name: label_3_copy_1_copy_1_copy
+      properties:
+        role: null
+        bold: true
+        align: left
+        spacing_above: small
+        background: ''
+        icon: ''
+        underline: false
+        font: ''
+        icon_align: left
+        foreground: ''
+        spacing_below: small
+        visible: true
+        border: ''
+        italic: false
+        font_size: 12
+        tooltip: ''
+        text: |-
+          Enter Your Last Six Month's  *
+          Turnover:
+      type: Label
+      layout_properties: {row: DSUCCI, width_xs: 4, col_xs: 2}
+    - name: text_box_4
+      properties: {role: outlined, bold: false, align: left, placeholder: Enter Your Last Six Month's Turnover, spacing_above: small, background: 'theme:On Primary', type: text, underline: false, font: '', hide_text: false, foreground: '', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: 12, tooltip: '', text: ''}
+      type: TextBox
+      layout_properties: {row: DSUCCI, width_xs: 6, col_xs: 6}
+    - name: label_1_copy_1_copy_2
+      properties:
+        role: null
+        bold: true
+        align: left
+        spacing_above: small
+        background: ''
+        icon: ''
+        underline: false
+        font: ''
+        icon_align: left
+        foreground: ''
+        spacing_below: small
+        visible: true
+        border: ''
+        italic: false
+        font_size: 12
+        tooltip: ''
+        text: |-
+          Last 6 Month's Bank  * Statements:
+          (Image Size less-than 2MB)
+      type: Label
+      layout_properties: {row: YKLTNH, width_xs: 3, col_xs: 2}
+    - name: file_loader_1
+      properties: {text: Upload Bank Statement, font_size: 12}
+      type: FileLoader
+      layout_properties: {row: YKLTNH, width_xs: 3, col_xs: 6}
+      event_bindings: {change: file_loader_1}
+    - name: image_1
+      properties: {height: 66.66665649414062}
+      type: Image
+      layout_properties: {row: YKLTNH, width_xs: 3, col_xs: 9}
+    - name: label_1_copy_1_copy_1_copy
+      properties: {role: null, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: none, visible: true, border: '', italic: false, font_size: 12, tooltip: '', text: 'Enter DIN:  *'}
+      type: Label
+      layout_properties: {row: SFKRLZ, width_xs: 2, col_xs: 2}
+    - name: text_box_5
+      properties: {role: outlined, bold: false, align: left, placeholder: Enter DIN, spacing_above: small, background: 'theme:On Primary', type: text, underline: false, font: '', hide_text: false, foreground: '', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: 12, tooltip: '', text: ''}
+      type: TextBox
+      layout_properties: {row: SFKRLZ, width_xs: 6, col_xs: 6}
+      event_bindings: {pressed_enter: text_box_3_pressed_enter}
+    - name: label_2_copy_1_copy_1_copy
+      properties: {role: null, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: 12, tooltip: '', text: 'Enter CIN:  *'}
+      type: Label
+      layout_properties: {row: NGDDYV, width_xs: 2, col_xs: 2}
+    - name: text_box_6
+      properties: {role: outlined, bold: false, align: left, placeholder: Enter CIN, spacing_above: small, background: 'theme:On Primary', type: text, underline: false, font: '', hide_text: false, foreground: '', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: 12, tooltip: '', text: ''}
+      type: TextBox
+      layout_properties: {row: NGDDYV, width_xs: 6, col_xs: 6}
+    - name: label_2_copy_1_copy_1_copy_2
+      properties:
+        role: null
+        bold: true
+        align: left
+        spacing_above: small
+        background: ''
+        icon: ''
+        underline: false
+        font: ''
+        icon_align: left
+        foreground: ''
+        spacing_below: small
+        visible: true
+        border: ''
+        italic: false
+        font_size: 12
+        tooltip: ''
+        text: "Enter Your Registered Office  * \nAddress:  "
+      type: Label
+      layout_properties: {row: SQJSWJ, width_xs: 4, col_xs: 2}
+    - name: text_box_7
+      properties: {role: outlined, bold: false, align: left, placeholder: Enter Your Registered Office Address, spacing_above: small, background: 'theme:On Primary', type: text, underline: false, font: '', hide_text: false, foreground: '', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: 12, tooltip: '', text: ''}
+      type: TextBox
+      layout_properties: {row: SQJSWJ, width_xs: 6, col_xs: 6}
+    - name: label_1_copy_1_copy_copy
+      properties:
+        role: null
+        bold: true
+        align: left
+        spacing_above: small
+        background: ''
+        icon: ''
+        underline: false
+        font: ''
+        icon_align: left
+        foreground: ''
+        spacing_below: small
+        visible: true
+        border: ''
+        italic: false
+        font_size: 12
+        tooltip: ''
+        text: |-
+          Provide Proof of Verification:  *
+          (recent electricity bill)
+      type: Label
+      layout_properties: {row: ZCPIJA, width_xs: 4, col_xs: 2}
+    - name: file_loader_1_copy
+      properties: {text: Upload Verification proof, font_size: 12}
+      type: FileLoader
+      layout_properties: {row: ZCPIJA, width_xs: 3, col_xs: 6}
+      event_bindings: {change: file_loader_1_copy}
+    - name: image_1_copy
+      properties: {height: 66.33331298828125}
+      type: Image
+      layout_properties: {row: ZCPIJA, width_xs: 3, col_xs: 9}
 - name: button_1
   properties: {role: elevated-button, bold: true, align: right, spacing_above: small, background: '#0b2547', icon: 'fa:angle-double-left', underline: false, font: '', icon_align: left, foreground: 'theme:On Primary', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: Prev}
   type: Button

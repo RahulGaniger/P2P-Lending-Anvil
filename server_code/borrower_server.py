@@ -43,7 +43,7 @@ def add_borrower_student(college_name,college_id,college_proof,college_address,u
     row[0]['college_id']=college_id
     row[0]['college_address']=college_address
     row[0]['college_proof']=college_proof
-    row[0]['form_count']=2.1
+    row[0]['form_count']=2
 
 @anvil.server.callable
 def add_borrwer_self_employment(status_of_user,user_id):
@@ -61,7 +61,7 @@ def add_borrower_farmer(land_type,total_acres,crop_name,farmer_earnings,user_id)
     row[0]['total_acres'] = total_acres_numeric
     row[0]['crop_name'] = crop_name
     row[0]['farmer_earnings'] = farmer_earnings 
-    row[0]['form_count'] = 2.4
+    row[0]['form_count'] = 2
 
 @anvil.server.callable
 def add_borrower_step3(marital_status,user_id):
