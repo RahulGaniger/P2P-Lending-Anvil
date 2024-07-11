@@ -15,18 +15,19 @@ class navigation_bar_main(navigation_bar_mainTemplate):
 
     # Any code you write here will run before the form opens.
 
-  def borrower_dashboard_home_linkhome_borrower_registration_button_copy_1_click(self, **event_args):
-    open_form('bank_users.user_form')
+  def home_main_form_link_click(self, **event_args):
+      """This method is called when the link is clicked"""
+      open_form('bank_users.main_form')
+
+  def about_main_form_link_click(self, **event_args):
+        """This method is called when the link is clicked"""
+        open_form('bank_users.main_form.about_main_form')
 
   def contact_main_form_link_click(self, **event_args):
-    open_form("borrower.borrower_registration_forms.dashboard_contact_copy")
+        """This method is called when the link is clicked"""
+        open_form('bank_users.main_form.contact_main_form')
 
-  def notification_link_click(self, **event_args):
-    """This method is called when the link is clicked"""
-    pass
+  
 
-  def wallet_dashboard_link_click(self, **event_args):
-    open_form("wallet.wallet")
-
-  def About_Us_click(self, **event_args):
-    open_form("borrower.borrower_registration_forms.dashboard_about_borrower_registration_form")
+  
+        

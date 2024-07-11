@@ -18,29 +18,17 @@ class navigation_bar_main_lender(navigation_bar_main_lenderTemplate):
 
     # Any code you write here will run before the form opens.
 
-  def borrower_dashboard_home_linkhome_borrower_registration_button_copy_1_click(self, **event_args):
-    open_form('bank_users.user_form')
-    # open_form("lendor_registration_form.dashboard")
-    # user_request = app_tables.fin_user_profile.get(customer_id=self.user_id)
-    # if user_request:
-    #   self.user_type = user_request['usertype']
+  def home_main_form_link_click(self, **event_args):
+      """This method is called when the link is clicked"""
+      open_form('bank_users.main_form')
 
-    # if self.user_type == "lender":
-    #     open_form("lendor.dashboard")
-    # else:
-    #     open_form("bank_users.user_form")
 
-  def report_problem_form_link_click(self, **event_args):
-    """This method is called when the link is clicked"""
-    pass
+  def about_main_form_link_click(self, **event_args):
+        """This method is called when the link is clicked"""
+        open_form('bank_users.main_form.about_main_form')
 
   def contact_main_form_link_click(self, **event_args):
-    open_form("lendor.lendor_registration_forms.dasboard_contact_lendor_registration_form")
+        """This method is called when the link is clicked"""
+        open_form('bank_users.main_form.contact_main_form')
 
-  def help_link_click(self, **event_args):
-    """This method is called when the link is clicked"""
-    pass
-
-  def About_Us_click(self, **event_args):
-    open_form('lendor.lendor_registration_forms.dasboard_about_lendor_registration_form')
-    
+ 

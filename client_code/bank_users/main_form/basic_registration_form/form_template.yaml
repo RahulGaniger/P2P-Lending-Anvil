@@ -1,12 +1,12 @@
 is_package: true
 container:
   type: ColumnPanel
-  properties: {col_widths: '{"ALTBGH":25,"IZCRHB":5}'}
+  properties: {col_widths: '{"ALTBGH":25}'}
 components:
-- name: borrower_registration_form_nav_bar_1
+- name: borrwer_registration_navigation_bar_1
   properties: {}
-  type: form:borrower.borrower_registration_forms.borrower_registration_form_nav_bar
-  layout_properties: {grid_position: 'MJUPTZ,JNEESO', full_width_row: true}
+  type: form:borrower.borrower_registration_forms.borrwer_registration_navigation_bar
+  layout_properties: {grid_position: 'SSMITU,TBHJOS'}
 - properties: {}
   type: form:borrower.borrower_registration_forms.registration_process
   layout_properties: {grid_position: 'IXQBED,QRWAJN'}
